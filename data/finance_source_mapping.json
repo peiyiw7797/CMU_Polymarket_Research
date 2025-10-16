@@ -1,0 +1,956 @@
+[
+  {
+    "market_id": "511754",
+    "market_question": "Will Donald Trump be inaugurated?",
+    "jurisdiction": "United States – Federal",
+    "office_level": "Presidential / Vice-Presidential nomination",
+    "public_sources": [
+      {
+        "name": "Federal Election Commission Data Portal",
+        "url": "https://www.fec.gov/data/",
+        "license": "U.S. government work (public domain under 17 U.S.C. §105).",
+        "access_notes": "Includes committee- and candidate-level receipts, disbursements, and independent expenditure filings. Daily bulk CSV dumps allow reproducible merges.",
+        "requires_escalation": false
+      },
+      {
+        "name": "OpenSecrets Presidential Race Dashboard",
+        "url": "https://www.opensecrets.org/2024-presidential-race",
+        "license": "Creative Commons BY-NC 3.0; non-commercial redistribution with attribution.",
+        "access_notes": "Aggregated fundraising and outside spending totals; API requires free account and enforces non-commercial restrictions.",
+        "requires_escalation": false
+      },
+      {
+        "name": "ProPublica Campaign Finance API",
+        "url": "https://www.propublica.org/datastore/api/propublica-campaign-finance-api",
+        "license": "Free for non-commercial use; registration and attribution required.",
+        "access_notes": "Provides normalized FEC filings (Schedule A/B) with REST pagination for programmatic pulls.",
+        "requires_escalation": false
+      }
+    ],
+    "commercial_sources": [
+      {
+        "name": "AdImpact Political Advertising Intelligence",
+        "url": "https://www.adimpact.com/",
+        "license": "Commercial license; NDAs and seat fees required.",
+        "access_notes": "Creative spend and impression estimates for TV, CTV, and digital placements. Use to contextualize ad blitzes around market price swings.",
+        "requires_escalation": true
+      },
+      {
+        "name": "Kantar/CMAG Political Advertising Database",
+        "url": "https://www.kantar.com/north-america/expertise/media/planning/advertising-intelligence",
+        "license": "Commercial license; negotiated contracts.",
+        "access_notes": "Legacy TV and radio ad tracking with flight dates. Useful for corroborating spend spikes.",
+        "requires_escalation": true
+      }
+    ],
+    "timeline_alignment_guidance": "Use FEC coverage_end_date to align quarterly and 48-hour filings with market price timestamps. After each report, forward-fill cumulative totals until the next filing to maintain daily continuity.",
+    "additional_notes": "Pair presidential committee filings with joint fundraising committee data (e.g., Trump Save America, Biden Victory Fund) for completeness."
+  },
+  {
+    "market_id": "511753",
+    "market_question": "Will Kamala Harris be inaugurated?",
+    "jurisdiction": "United States – Federal",
+    "office_level": "Presidential / Vice-Presidential nomination",
+    "public_sources": [
+      {
+        "name": "Federal Election Commission Data Portal",
+        "url": "https://www.fec.gov/data/",
+        "license": "U.S. government work (public domain under 17 U.S.C. §105).",
+        "access_notes": "Includes committee- and candidate-level receipts, disbursements, and independent expenditure filings. Daily bulk CSV dumps allow reproducible merges.",
+        "requires_escalation": false
+      },
+      {
+        "name": "OpenSecrets Presidential Race Dashboard",
+        "url": "https://www.opensecrets.org/2024-presidential-race",
+        "license": "Creative Commons BY-NC 3.0; non-commercial redistribution with attribution.",
+        "access_notes": "Aggregated fundraising and outside spending totals; API requires free account and enforces non-commercial restrictions.",
+        "requires_escalation": false
+      },
+      {
+        "name": "ProPublica Campaign Finance API",
+        "url": "https://www.propublica.org/datastore/api/propublica-campaign-finance-api",
+        "license": "Free for non-commercial use; registration and attribution required.",
+        "access_notes": "Provides normalized FEC filings (Schedule A/B) with REST pagination for programmatic pulls.",
+        "requires_escalation": false
+      }
+    ],
+    "commercial_sources": [
+      {
+        "name": "AdImpact Political Advertising Intelligence",
+        "url": "https://www.adimpact.com/",
+        "license": "Commercial license; NDAs and seat fees required.",
+        "access_notes": "Creative spend and impression estimates for TV, CTV, and digital placements. Use to contextualize ad blitzes around market price swings.",
+        "requires_escalation": true
+      },
+      {
+        "name": "Kantar/CMAG Political Advertising Database",
+        "url": "https://www.kantar.com/north-america/expertise/media/planning/advertising-intelligence",
+        "license": "Commercial license; negotiated contracts.",
+        "access_notes": "Legacy TV and radio ad tracking with flight dates. Useful for corroborating spend spikes.",
+        "requires_escalation": true
+      }
+    ],
+    "timeline_alignment_guidance": "Use FEC coverage_end_date to align quarterly and 48-hour filings with market price timestamps. After each report, forward-fill cumulative totals until the next filing to maintain daily continuity.",
+    "additional_notes": "Pair presidential committee filings with joint fundraising committee data (e.g., Trump Save America, Biden Victory Fund) for completeness."
+  },
+  {
+    "market_id": "504873",
+    "market_question": "Will Gavin Newsom be D-nom for VP on Election Day?",
+    "jurisdiction": "United States – Federal",
+    "office_level": "Presidential / Vice-Presidential nomination",
+    "public_sources": [
+      {
+        "name": "Federal Election Commission Data Portal",
+        "url": "https://www.fec.gov/data/",
+        "license": "U.S. government work (public domain under 17 U.S.C. §105).",
+        "access_notes": "Includes committee- and candidate-level receipts, disbursements, and independent expenditure filings. Daily bulk CSV dumps allow reproducible merges.",
+        "requires_escalation": false
+      },
+      {
+        "name": "OpenSecrets Presidential Race Dashboard",
+        "url": "https://www.opensecrets.org/2024-presidential-race",
+        "license": "Creative Commons BY-NC 3.0; non-commercial redistribution with attribution.",
+        "access_notes": "Aggregated fundraising and outside spending totals; API requires free account and enforces non-commercial restrictions.",
+        "requires_escalation": false
+      },
+      {
+        "name": "ProPublica Campaign Finance API",
+        "url": "https://www.propublica.org/datastore/api/propublica-campaign-finance-api",
+        "license": "Free for non-commercial use; registration and attribution required.",
+        "access_notes": "Provides normalized FEC filings (Schedule A/B) with REST pagination for programmatic pulls.",
+        "requires_escalation": false
+      }
+    ],
+    "commercial_sources": [
+      {
+        "name": "AdImpact Political Advertising Intelligence",
+        "url": "https://www.adimpact.com/",
+        "license": "Commercial license; NDAs and seat fees required.",
+        "access_notes": "Creative spend and impression estimates for TV, CTV, and digital placements. Use to contextualize ad blitzes around market price swings.",
+        "requires_escalation": true
+      },
+      {
+        "name": "Kantar/CMAG Political Advertising Database",
+        "url": "https://www.kantar.com/north-america/expertise/media/planning/advertising-intelligence",
+        "license": "Commercial license; negotiated contracts.",
+        "access_notes": "Legacy TV and radio ad tracking with flight dates. Useful for corroborating spend spikes.",
+        "requires_escalation": true
+      }
+    ],
+    "timeline_alignment_guidance": "Use FEC coverage_end_date to align quarterly and 48-hour filings with market price timestamps. After each report, forward-fill cumulative totals until the next filing to maintain daily continuity.",
+    "additional_notes": "Pair presidential committee filings with joint fundraising committee data (e.g., Trump Save America, Biden Victory Fund) for completeness."
+  },
+  {
+    "market_id": "504868",
+    "market_question": "Will Michelle Obama be D-nom for VP on Election Day?",
+    "jurisdiction": "United States – Federal",
+    "office_level": "Presidential / Vice-Presidential nomination",
+    "public_sources": [
+      {
+        "name": "Federal Election Commission Data Portal",
+        "url": "https://www.fec.gov/data/",
+        "license": "U.S. government work (public domain under 17 U.S.C. §105).",
+        "access_notes": "Includes committee- and candidate-level receipts, disbursements, and independent expenditure filings. Daily bulk CSV dumps allow reproducible merges.",
+        "requires_escalation": false
+      },
+      {
+        "name": "OpenSecrets Presidential Race Dashboard",
+        "url": "https://www.opensecrets.org/2024-presidential-race",
+        "license": "Creative Commons BY-NC 3.0; non-commercial redistribution with attribution.",
+        "access_notes": "Aggregated fundraising and outside spending totals; API requires free account and enforces non-commercial restrictions.",
+        "requires_escalation": false
+      },
+      {
+        "name": "ProPublica Campaign Finance API",
+        "url": "https://www.propublica.org/datastore/api/propublica-campaign-finance-api",
+        "license": "Free for non-commercial use; registration and attribution required.",
+        "access_notes": "Provides normalized FEC filings (Schedule A/B) with REST pagination for programmatic pulls.",
+        "requires_escalation": false
+      }
+    ],
+    "commercial_sources": [
+      {
+        "name": "AdImpact Political Advertising Intelligence",
+        "url": "https://www.adimpact.com/",
+        "license": "Commercial license; NDAs and seat fees required.",
+        "access_notes": "Creative spend and impression estimates for TV, CTV, and digital placements. Use to contextualize ad blitzes around market price swings.",
+        "requires_escalation": true
+      },
+      {
+        "name": "Kantar/CMAG Political Advertising Database",
+        "url": "https://www.kantar.com/north-america/expertise/media/planning/advertising-intelligence",
+        "license": "Commercial license; negotiated contracts.",
+        "access_notes": "Legacy TV and radio ad tracking with flight dates. Useful for corroborating spend spikes.",
+        "requires_escalation": true
+      }
+    ],
+    "timeline_alignment_guidance": "Use FEC coverage_end_date to align quarterly and 48-hour filings with market price timestamps. After each report, forward-fill cumulative totals until the next filing to maintain daily continuity.",
+    "additional_notes": "Pair presidential committee filings with joint fundraising committee data (e.g., Trump Save America, Biden Victory Fund) for completeness."
+  },
+  {
+    "market_id": "507242",
+    "market_question": "Will the Democratic candidate win Pennsylvania by 1.5%-2.0%?",
+    "jurisdiction": "United States – Pennsylvania",
+    "office_level": "Presidential statewide vote margin",
+    "public_sources": [
+      {
+        "name": "Federal Election Commission Data Portal",
+        "url": "https://www.fec.gov/data/",
+        "license": "U.S. government work (public domain under 17 U.S.C. §105).",
+        "access_notes": "Includes committee- and candidate-level receipts, disbursements, and independent expenditure filings. Daily bulk CSV dumps allow reproducible merges.",
+        "requires_escalation": false
+      },
+      {
+        "name": "OpenSecrets Presidential Race Dashboard",
+        "url": "https://www.opensecrets.org/2024-presidential-race",
+        "license": "Creative Commons BY-NC 3.0; non-commercial redistribution with attribution.",
+        "access_notes": "Aggregated fundraising and outside spending totals; API requires free account and enforces non-commercial restrictions.",
+        "requires_escalation": false
+      },
+      {
+        "name": "ProPublica Campaign Finance API",
+        "url": "https://www.propublica.org/datastore/api/propublica-campaign-finance-api",
+        "license": "Free for non-commercial use; registration and attribution required.",
+        "access_notes": "Provides normalized FEC filings (Schedule A/B) with REST pagination for programmatic pulls.",
+        "requires_escalation": false
+      },
+      {
+        "name": "Pennsylvania DOS Campaign Finance Reporting",
+        "url": "https://www.dos.pa.gov/VotingElections/CandidatesCommittees/CampaignFinance/Pages/default.aspx",
+        "license": "Official state portal; reuse permitted with attribution under Pennsylvania open records guidance.",
+        "access_notes": "Provides CSV exports of statewide and federal filings attributed to Pennsylvania committees with reporting-period timestamps.",
+        "requires_escalation": false
+      },
+      {
+        "name": "FollowTheMoney – Pennsylvania State Overview",
+        "url": "https://www.followthemoney.org/tools/state/pennsylvania/",
+        "license": "CC BY 4.0 with attribution; mirrors state filings.",
+        "access_notes": "Aggregated state-level receipts and independent expenditures, harmonized across election cycles.",
+        "requires_escalation": false
+      }
+    ],
+    "commercial_sources": [
+      {
+        "name": "AdImpact Political Advertising Intelligence",
+        "url": "https://www.adimpact.com/",
+        "license": "Commercial license; NDAs and seat fees required.",
+        "access_notes": "Creative spend and impression estimates for TV, CTV, and digital placements. Use to contextualize ad blitzes around market price swings.",
+        "requires_escalation": true
+      },
+      {
+        "name": "Kantar/CMAG Political Advertising Database",
+        "url": "https://www.kantar.com/north-america/expertise/media/planning/advertising-intelligence",
+        "license": "Commercial license; negotiated contracts.",
+        "access_notes": "Legacy TV and radio ad tracking with flight dates. Useful for corroborating spend spikes.",
+        "requires_escalation": true
+      },
+      {
+        "name": "TargetSmart VoterBase + Finance Enhancements",
+        "url": "https://targetsmart.com/",
+        "license": "Commercial; multi-year contract.",
+        "access_notes": "Provides predictive donor scoring and near-real-time ingestion of Pennsylvania filings.",
+        "requires_escalation": true
+      }
+    ],
+    "timeline_alignment_guidance": "Pennsylvania filings follow pre-primary, pre-general, and 24-hour schedules. Normalize by converting each filing's reporting_period_end_date to UTC and aligning with matching market dates; forward-fill between filings.",
+    "additional_notes": "Blend statewide filings with county-level late contribution notices for final 72-hour adjustments."
+  },
+  {
+    "market_id": "507237",
+    "market_question": "Will the Democratic candidate win Pennsylvania by 0.5%-1%?",
+    "jurisdiction": "United States – Pennsylvania",
+    "office_level": "Presidential statewide vote margin",
+    "public_sources": [
+      {
+        "name": "Federal Election Commission Data Portal",
+        "url": "https://www.fec.gov/data/",
+        "license": "U.S. government work (public domain under 17 U.S.C. §105).",
+        "access_notes": "Includes committee- and candidate-level receipts, disbursements, and independent expenditure filings. Daily bulk CSV dumps allow reproducible merges.",
+        "requires_escalation": false
+      },
+      {
+        "name": "OpenSecrets Presidential Race Dashboard",
+        "url": "https://www.opensecrets.org/2024-presidential-race",
+        "license": "Creative Commons BY-NC 3.0; non-commercial redistribution with attribution.",
+        "access_notes": "Aggregated fundraising and outside spending totals; API requires free account and enforces non-commercial restrictions.",
+        "requires_escalation": false
+      },
+      {
+        "name": "ProPublica Campaign Finance API",
+        "url": "https://www.propublica.org/datastore/api/propublica-campaign-finance-api",
+        "license": "Free for non-commercial use; registration and attribution required.",
+        "access_notes": "Provides normalized FEC filings (Schedule A/B) with REST pagination for programmatic pulls.",
+        "requires_escalation": false
+      },
+      {
+        "name": "Pennsylvania DOS Campaign Finance Reporting",
+        "url": "https://www.dos.pa.gov/VotingElections/CandidatesCommittees/CampaignFinance/Pages/default.aspx",
+        "license": "Official state portal; reuse permitted with attribution under Pennsylvania open records guidance.",
+        "access_notes": "Provides CSV exports of statewide and federal filings attributed to Pennsylvania committees with reporting-period timestamps.",
+        "requires_escalation": false
+      },
+      {
+        "name": "FollowTheMoney – Pennsylvania State Overview",
+        "url": "https://www.followthemoney.org/tools/state/pennsylvania/",
+        "license": "CC BY 4.0 with attribution; mirrors state filings.",
+        "access_notes": "Aggregated state-level receipts and independent expenditures, harmonized across election cycles.",
+        "requires_escalation": false
+      }
+    ],
+    "commercial_sources": [
+      {
+        "name": "AdImpact Political Advertising Intelligence",
+        "url": "https://www.adimpact.com/",
+        "license": "Commercial license; NDAs and seat fees required.",
+        "access_notes": "Creative spend and impression estimates for TV, CTV, and digital placements. Use to contextualize ad blitzes around market price swings.",
+        "requires_escalation": true
+      },
+      {
+        "name": "Kantar/CMAG Political Advertising Database",
+        "url": "https://www.kantar.com/north-america/expertise/media/planning/advertising-intelligence",
+        "license": "Commercial license; negotiated contracts.",
+        "access_notes": "Legacy TV and radio ad tracking with flight dates. Useful for corroborating spend spikes.",
+        "requires_escalation": true
+      },
+      {
+        "name": "TargetSmart VoterBase + Finance Enhancements",
+        "url": "https://targetsmart.com/",
+        "license": "Commercial; multi-year contract.",
+        "access_notes": "Provides predictive donor scoring and near-real-time ingestion of Pennsylvania filings.",
+        "requires_escalation": true
+      }
+    ],
+    "timeline_alignment_guidance": "Pennsylvania filings follow pre-primary, pre-general, and 24-hour schedules. Normalize by converting each filing's reporting_period_end_date to UTC and aligning with matching market dates; forward-fill between filings.",
+    "additional_notes": "Blend statewide filings with county-level late contribution notices for final 72-hour adjustments."
+  },
+  {
+    "market_id": "509218",
+    "market_question": "Will the Democratic candidate win Nevada by 3.0%-4.0%? ",
+    "jurisdiction": "United States – Nevada",
+    "office_level": "Presidential statewide vote margin",
+    "public_sources": [
+      {
+        "name": "Federal Election Commission Data Portal",
+        "url": "https://www.fec.gov/data/",
+        "license": "U.S. government work (public domain under 17 U.S.C. §105).",
+        "access_notes": "Includes committee- and candidate-level receipts, disbursements, and independent expenditure filings. Daily bulk CSV dumps allow reproducible merges.",
+        "requires_escalation": false
+      },
+      {
+        "name": "OpenSecrets Presidential Race Dashboard",
+        "url": "https://www.opensecrets.org/2024-presidential-race",
+        "license": "Creative Commons BY-NC 3.0; non-commercial redistribution with attribution.",
+        "access_notes": "Aggregated fundraising and outside spending totals; API requires free account and enforces non-commercial restrictions.",
+        "requires_escalation": false
+      },
+      {
+        "name": "ProPublica Campaign Finance API",
+        "url": "https://www.propublica.org/datastore/api/propublica-campaign-finance-api",
+        "license": "Free for non-commercial use; registration and attribution required.",
+        "access_notes": "Provides normalized FEC filings (Schedule A/B) with REST pagination for programmatic pulls.",
+        "requires_escalation": false
+      },
+      {
+        "name": "Nevada Secretary of State – Campaign Finance",
+        "url": "https://www.nvsos.gov/sos/elections/campaign-finance",
+        "license": "Official state publication; reuse allowed with attribution per Nevada Revised Statutes 239.",
+        "access_notes": "Candidate and committee filings with XML/CSV export, including filing acceptance timestamps.",
+        "requires_escalation": false
+      },
+      {
+        "name": "FollowTheMoney – Nevada State Overview",
+        "url": "https://www.followthemoney.org/tools/state/nevada/",
+        "license": "CC BY 4.0 with attribution.",
+        "access_notes": "Normalizes Nevada committee filings and independent expenditures over time.",
+        "requires_escalation": false
+      }
+    ],
+    "commercial_sources": [
+      {
+        "name": "AdImpact Political Advertising Intelligence",
+        "url": "https://www.adimpact.com/",
+        "license": "Commercial license; NDAs and seat fees required.",
+        "access_notes": "Creative spend and impression estimates for TV, CTV, and digital placements. Use to contextualize ad blitzes around market price swings.",
+        "requires_escalation": true
+      },
+      {
+        "name": "Kantar/CMAG Political Advertising Database",
+        "url": "https://www.kantar.com/north-america/expertise/media/planning/advertising-intelligence",
+        "license": "Commercial license; negotiated contracts.",
+        "access_notes": "Legacy TV and radio ad tracking with flight dates. Useful for corroborating spend spikes.",
+        "requires_escalation": true
+      },
+      {
+        "name": "Civis Analytics – Battleground Finance Feeds",
+        "url": "https://www.civisanalytics.com/",
+        "license": "Commercial; custom data agreement.",
+        "access_notes": "Combines Nevada filings with modeling of small-dollar donors; ingest schedule mirrored weekly.",
+        "requires_escalation": true
+      }
+    ],
+    "timeline_alignment_guidance": "Nevada requires pre-primary/general and 24-hour reports. Align using filing acceptance datetime, adjusting for Pacific Time when merging with UTC price data.",
+    "additional_notes": "Nevada posts filings in Pacific Time; convert to UTC before merging with market timestamps."
+  },
+  {
+    "market_id": "509188",
+    "market_question": "Will the Democratic candidate win Wisconsin by 3%-4.0%? ",
+    "jurisdiction": "United States – Wisconsin",
+    "office_level": "Presidential statewide vote margin",
+    "public_sources": [
+      {
+        "name": "Federal Election Commission Data Portal",
+        "url": "https://www.fec.gov/data/",
+        "license": "U.S. government work (public domain under 17 U.S.C. §105).",
+        "access_notes": "Includes committee- and candidate-level receipts, disbursements, and independent expenditure filings. Daily bulk CSV dumps allow reproducible merges.",
+        "requires_escalation": false
+      },
+      {
+        "name": "OpenSecrets Presidential Race Dashboard",
+        "url": "https://www.opensecrets.org/2024-presidential-race",
+        "license": "Creative Commons BY-NC 3.0; non-commercial redistribution with attribution.",
+        "access_notes": "Aggregated fundraising and outside spending totals; API requires free account and enforces non-commercial restrictions.",
+        "requires_escalation": false
+      },
+      {
+        "name": "ProPublica Campaign Finance API",
+        "url": "https://www.propublica.org/datastore/api/propublica-campaign-finance-api",
+        "license": "Free for non-commercial use; registration and attribution required.",
+        "access_notes": "Provides normalized FEC filings (Schedule A/B) with REST pagination for programmatic pulls.",
+        "requires_escalation": false
+      },
+      {
+        "name": "Wisconsin Campaign Finance Information System (CFIS)",
+        "url": "https://cfis.wi.gov",
+        "license": "State-hosted database; terms allow reuse for non-commercial analysis with attribution.",
+        "access_notes": "Exports campaign finance filings with coverage period metadata in CSV and XML.",
+        "requires_escalation": false
+      },
+      {
+        "name": "Wisconsin Ethics Commission Open Data",
+        "url": "https://ethics.wi.gov/Pages/CampaignFinance/Opendata.aspx",
+        "license": "State open data licence; attribution required.",
+        "access_notes": "Provides bulk CSV downloads for receipts and disbursements matched to CFIS identifiers.",
+        "requires_escalation": false
+      }
+    ],
+    "commercial_sources": [
+      {
+        "name": "AdImpact Political Advertising Intelligence",
+        "url": "https://www.adimpact.com/",
+        "license": "Commercial license; NDAs and seat fees required.",
+        "access_notes": "Creative spend and impression estimates for TV, CTV, and digital placements. Use to contextualize ad blitzes around market price swings.",
+        "requires_escalation": true
+      },
+      {
+        "name": "Kantar/CMAG Political Advertising Database",
+        "url": "https://www.kantar.com/north-america/expertise/media/planning/advertising-intelligence",
+        "license": "Commercial license; negotiated contracts.",
+        "access_notes": "Legacy TV and radio ad tracking with flight dates. Useful for corroborating spend spikes.",
+        "requires_escalation": true
+      },
+      {
+        "name": "L2 Political – Wisconsin Donor Files",
+        "url": "https://l2-data.com/",
+        "license": "Commercial; subscription required.",
+        "access_notes": "Links CFIS filings to voter files for microtargeting analysis.",
+        "requires_escalation": true
+      }
+    ],
+    "timeline_alignment_guidance": "Wisconsin CFIS updates nightly. Capture the `report_period_end_date` and expand across days until subsequent filings.",
+    "additional_notes": "CFIS distinguishes between state and federal committees; filter on federal office to match presidential vote margins."
+  },
+  {
+    "market_id": "512246",
+    "market_question": "Will Austin Scott be the first elected Speaker of the House for the 119th congress?",
+    "jurisdiction": "United States – U.S. House of Representatives",
+    "office_level": "House leadership election",
+    "public_sources": [
+      {
+        "name": "Federal Election Commission Data Portal",
+        "url": "https://www.fec.gov/data/",
+        "license": "U.S. government work (public domain under 17 U.S.C. §105).",
+        "access_notes": "Includes committee- and candidate-level receipts, disbursements, and independent expenditure filings. Daily bulk CSV dumps allow reproducible merges.",
+        "requires_escalation": false
+      },
+      {
+        "name": "OpenSecrets Presidential Race Dashboard",
+        "url": "https://www.opensecrets.org/2024-presidential-race",
+        "license": "Creative Commons BY-NC 3.0; non-commercial redistribution with attribution.",
+        "access_notes": "Aggregated fundraising and outside spending totals; API requires free account and enforces non-commercial restrictions.",
+        "requires_escalation": false
+      },
+      {
+        "name": "ProPublica Campaign Finance API",
+        "url": "https://www.propublica.org/datastore/api/propublica-campaign-finance-api",
+        "license": "Free for non-commercial use; registration and attribution required.",
+        "access_notes": "Provides normalized FEC filings (Schedule A/B) with REST pagination for programmatic pulls.",
+        "requires_escalation": false
+      },
+      {
+        "name": "Clerk of the U.S. House – Financial Disclosure Reports",
+        "url": "https://disclosures-clerk.house.gov/PublicDisclosure/FinancialDisclosure",
+        "license": "U.S. government work (public domain).",
+        "access_notes": "Annual disclosures covering leadership PACs and personal finances of House members, complementing FEC filings.",
+        "requires_escalation": false
+      }
+    ],
+    "commercial_sources": [
+      {
+        "name": "AdImpact Political Advertising Intelligence",
+        "url": "https://www.adimpact.com/",
+        "license": "Commercial license; NDAs and seat fees required.",
+        "access_notes": "Creative spend and impression estimates for TV, CTV, and digital placements. Use to contextualize ad blitzes around market price swings.",
+        "requires_escalation": true
+      },
+      {
+        "name": "Kantar/CMAG Political Advertising Database",
+        "url": "https://www.kantar.com/north-america/expertise/media/planning/advertising-intelligence",
+        "license": "Commercial license; negotiated contracts.",
+        "access_notes": "Legacy TV and radio ad tracking with flight dates. Useful for corroborating spend spikes.",
+        "requires_escalation": true
+      },
+      {
+        "name": "Quorum Federal Lobbying & PAC Contributions",
+        "url": "https://www.quorum.us/",
+        "license": "Commercial SaaS; contract required.",
+        "access_notes": "Tracks leadership PAC receipts and corporate PAC activity tied to House leadership races.",
+        "requires_escalation": true
+      }
+    ],
+    "timeline_alignment_guidance": "Candidate committees file monthly; leadership PACs file semi-annually. Join on FEC committee ID, using filing_received_date to sync with market moves around leadership announcements.",
+    "additional_notes": "Leadership races also hinge on NRCC/DCCC transfers; capture party committee filings for a holistic view."
+  },
+  {
+    "market_id": "512245",
+    "market_question": "Will Jack Bergman be the first elected Speaker of the House for the 119th congress?",
+    "jurisdiction": "United States – U.S. House of Representatives",
+    "office_level": "House leadership election",
+    "public_sources": [
+      {
+        "name": "Federal Election Commission Data Portal",
+        "url": "https://www.fec.gov/data/",
+        "license": "U.S. government work (public domain under 17 U.S.C. §105).",
+        "access_notes": "Includes committee- and candidate-level receipts, disbursements, and independent expenditure filings. Daily bulk CSV dumps allow reproducible merges.",
+        "requires_escalation": false
+      },
+      {
+        "name": "OpenSecrets Presidential Race Dashboard",
+        "url": "https://www.opensecrets.org/2024-presidential-race",
+        "license": "Creative Commons BY-NC 3.0; non-commercial redistribution with attribution.",
+        "access_notes": "Aggregated fundraising and outside spending totals; API requires free account and enforces non-commercial restrictions.",
+        "requires_escalation": false
+      },
+      {
+        "name": "ProPublica Campaign Finance API",
+        "url": "https://www.propublica.org/datastore/api/propublica-campaign-finance-api",
+        "license": "Free for non-commercial use; registration and attribution required.",
+        "access_notes": "Provides normalized FEC filings (Schedule A/B) with REST pagination for programmatic pulls.",
+        "requires_escalation": false
+      },
+      {
+        "name": "Clerk of the U.S. House – Financial Disclosure Reports",
+        "url": "https://disclosures-clerk.house.gov/PublicDisclosure/FinancialDisclosure",
+        "license": "U.S. government work (public domain).",
+        "access_notes": "Annual disclosures covering leadership PACs and personal finances of House members, complementing FEC filings.",
+        "requires_escalation": false
+      }
+    ],
+    "commercial_sources": [
+      {
+        "name": "AdImpact Political Advertising Intelligence",
+        "url": "https://www.adimpact.com/",
+        "license": "Commercial license; NDAs and seat fees required.",
+        "access_notes": "Creative spend and impression estimates for TV, CTV, and digital placements. Use to contextualize ad blitzes around market price swings.",
+        "requires_escalation": true
+      },
+      {
+        "name": "Kantar/CMAG Political Advertising Database",
+        "url": "https://www.kantar.com/north-america/expertise/media/planning/advertising-intelligence",
+        "license": "Commercial license; negotiated contracts.",
+        "access_notes": "Legacy TV and radio ad tracking with flight dates. Useful for corroborating spend spikes.",
+        "requires_escalation": true
+      },
+      {
+        "name": "Quorum Federal Lobbying & PAC Contributions",
+        "url": "https://www.quorum.us/",
+        "license": "Commercial SaaS; contract required.",
+        "access_notes": "Tracks leadership PAC receipts and corporate PAC activity tied to House leadership races.",
+        "requires_escalation": true
+      }
+    ],
+    "timeline_alignment_guidance": "Candidate committees file monthly; leadership PACs file semi-annually. Join on FEC committee ID, using filing_received_date to sync with market moves around leadership announcements.",
+    "additional_notes": "Leadership races also hinge on NRCC/DCCC transfers; capture party committee filings for a holistic view."
+  },
+  {
+    "market_id": "512248",
+    "market_question": "Will Elise Stefanik be the first elected Speaker of the House for the 119th congress?",
+    "jurisdiction": "United States – U.S. House of Representatives",
+    "office_level": "House leadership election",
+    "public_sources": [
+      {
+        "name": "Federal Election Commission Data Portal",
+        "url": "https://www.fec.gov/data/",
+        "license": "U.S. government work (public domain under 17 U.S.C. §105).",
+        "access_notes": "Includes committee- and candidate-level receipts, disbursements, and independent expenditure filings. Daily bulk CSV dumps allow reproducible merges.",
+        "requires_escalation": false
+      },
+      {
+        "name": "OpenSecrets Presidential Race Dashboard",
+        "url": "https://www.opensecrets.org/2024-presidential-race",
+        "license": "Creative Commons BY-NC 3.0; non-commercial redistribution with attribution.",
+        "access_notes": "Aggregated fundraising and outside spending totals; API requires free account and enforces non-commercial restrictions.",
+        "requires_escalation": false
+      },
+      {
+        "name": "ProPublica Campaign Finance API",
+        "url": "https://www.propublica.org/datastore/api/propublica-campaign-finance-api",
+        "license": "Free for non-commercial use; registration and attribution required.",
+        "access_notes": "Provides normalized FEC filings (Schedule A/B) with REST pagination for programmatic pulls.",
+        "requires_escalation": false
+      },
+      {
+        "name": "Clerk of the U.S. House – Financial Disclosure Reports",
+        "url": "https://disclosures-clerk.house.gov/PublicDisclosure/FinancialDisclosure",
+        "license": "U.S. government work (public domain).",
+        "access_notes": "Annual disclosures covering leadership PACs and personal finances of House members, complementing FEC filings.",
+        "requires_escalation": false
+      }
+    ],
+    "commercial_sources": [
+      {
+        "name": "AdImpact Political Advertising Intelligence",
+        "url": "https://www.adimpact.com/",
+        "license": "Commercial license; NDAs and seat fees required.",
+        "access_notes": "Creative spend and impression estimates for TV, CTV, and digital placements. Use to contextualize ad blitzes around market price swings.",
+        "requires_escalation": true
+      },
+      {
+        "name": "Kantar/CMAG Political Advertising Database",
+        "url": "https://www.kantar.com/north-america/expertise/media/planning/advertising-intelligence",
+        "license": "Commercial license; negotiated contracts.",
+        "access_notes": "Legacy TV and radio ad tracking with flight dates. Useful for corroborating spend spikes.",
+        "requires_escalation": true
+      },
+      {
+        "name": "Quorum Federal Lobbying & PAC Contributions",
+        "url": "https://www.quorum.us/",
+        "license": "Commercial SaaS; contract required.",
+        "access_notes": "Tracks leadership PAC receipts and corporate PAC activity tied to House leadership races.",
+        "requires_escalation": true
+      }
+    ],
+    "timeline_alignment_guidance": "Candidate committees file monthly; leadership PACs file semi-annually. Join on FEC committee ID, using filing_received_date to sync with market moves around leadership announcements.",
+    "additional_notes": "Leadership races also hinge on NRCC/DCCC transfers; capture party committee filings for a holistic view."
+  },
+  {
+    "market_id": "516767",
+    "market_question": "Will Pierre Poilievre be the next Canadian Prime Minister?",
+    "jurisdiction": "Canada – Federal",
+    "office_level": "Prime Minister / party leadership",
+    "public_sources": [
+      {
+        "name": "Elections Canada – Political Financing Reports",
+        "url": "https://www.elections.ca/content.aspx?section=fin&document=index&lang=e",
+        "license": "Open Government Licence – Canada.",
+        "access_notes": "Quarterly and event-based returns for registered parties, candidates, and leadership contestants with CSV exports.",
+        "requires_escalation": false
+      },
+      {
+        "name": "Elections Canada Open Data Portal",
+        "url": "https://www.elections.ca/content.aspx?section=res&dir=rec/dat&document=index&lang=e",
+        "license": "Open Government Licence – Canada.",
+        "access_notes": "Machine-readable datasets covering contributions, loans, and expenses dating back to 1993.",
+        "requires_escalation": false
+      }
+    ],
+    "commercial_sources": [
+      {
+        "name": "iPolitics INTEL Fundraising Tracker",
+        "url": "https://www.ipolitics.ca/intel/",
+        "license": "Subscription service.",
+        "access_notes": "Provides curated fundraising alerts and early access to Elections Canada filings.",
+        "requires_escalation": true
+      },
+      {
+        "name": "Politico Pro Canada Elections Coverage",
+        "url": "https://www.politico.com/pro",
+        "license": "Subscription (enterprise).",
+        "access_notes": "Delivers synthesized finance and lobbying intelligence around Canadian federal races.",
+        "requires_escalation": true
+      }
+    ],
+    "timeline_alignment_guidance": "Elections Canada event returns include `ReportingPeriodEndDate`. Convert to UTC and align to the daily close in the price series. Supplement with interim leadership contestant filings as available.",
+    "additional_notes": "Include Elections Canada event-specific expense reports once the writ is dropped for the 45th general election."
+  },
+  {
+    "market_id": "516769",
+    "market_question": "Will Mark Carney be the next Canadian Prime Minister?",
+    "jurisdiction": "Canada – Federal",
+    "office_level": "Prime Minister / party leadership",
+    "public_sources": [
+      {
+        "name": "Elections Canada – Political Financing Reports",
+        "url": "https://www.elections.ca/content.aspx?section=fin&document=index&lang=e",
+        "license": "Open Government Licence – Canada.",
+        "access_notes": "Quarterly and event-based returns for registered parties, candidates, and leadership contestants with CSV exports.",
+        "requires_escalation": false
+      },
+      {
+        "name": "Elections Canada Open Data Portal",
+        "url": "https://www.elections.ca/content.aspx?section=res&dir=rec/dat&document=index&lang=e",
+        "license": "Open Government Licence – Canada.",
+        "access_notes": "Machine-readable datasets covering contributions, loans, and expenses dating back to 1993.",
+        "requires_escalation": false
+      }
+    ],
+    "commercial_sources": [
+      {
+        "name": "iPolitics INTEL Fundraising Tracker",
+        "url": "https://www.ipolitics.ca/intel/",
+        "license": "Subscription service.",
+        "access_notes": "Provides curated fundraising alerts and early access to Elections Canada filings.",
+        "requires_escalation": true
+      },
+      {
+        "name": "Politico Pro Canada Elections Coverage",
+        "url": "https://www.politico.com/pro",
+        "license": "Subscription (enterprise).",
+        "access_notes": "Delivers synthesized finance and lobbying intelligence around Canadian federal races.",
+        "requires_escalation": true
+      }
+    ],
+    "timeline_alignment_guidance": "Elections Canada event returns include `ReportingPeriodEndDate`. Convert to UTC and align to the daily close in the price series. Supplement with interim leadership contestant filings as available.",
+    "additional_notes": "Include Elections Canada event-specific expense reports once the writ is dropped for the 45th general election."
+  },
+  {
+    "market_id": "512340",
+    "market_question": "Will Nicolae Ciucă win the 2024 Romanian Presidential election?",
+    "jurisdiction": "Romania – National",
+    "office_level": "Presidential election",
+    "public_sources": [
+      {
+        "name": "Autoritatea Electorală Permanentă – Portalul Financiar",
+        "url": "https://finantarepartide.ro/",
+        "license": "Romanian public sector data; reuse allowed with attribution under Law 544/2001, but interface remains Romanian-only.",
+        "access_notes": "Provides PDFs and XLS exports of income/expense statements by electoral period.",
+        "requires_escalation": false
+      },
+      {
+        "name": "Expert Forum (EFOR) – Banometru Dashboard",
+        "url": "https://expertforum.ro/banometru/",
+        "license": "Creative Commons BY 4.0.",
+        "access_notes": "Civil-society aggregation of AEP disclosures with machine-readable timelines.",
+        "requires_escalation": false
+      }
+    ],
+    "commercial_sources": [
+      {
+        "name": "CEIC Data – Romania Government & Politics",
+        "url": "https://www.ceicdata.com/en",
+        "license": "Commercial subscription.",
+        "access_notes": "Includes harmonized election finance and public subsidy series for Romania.",
+        "requires_escalation": true
+      }
+    ],
+    "timeline_alignment_guidance": "AEP posts pre-campaign and campaign expenditure statements stamped with submission dates. Manual OCR may be required; align to submission_date to observe lagged effects on market prices.",
+    "additional_notes": "AEP publishes reimbursements in PDF; plan for OCR or manual digitization to generate structured time series."
+  },
+  {
+    "market_id": "519075",
+    "market_question": "Will Hunor Kelemen win the Romanian presidential election?",
+    "jurisdiction": "Romania – National",
+    "office_level": "Presidential election",
+    "public_sources": [
+      {
+        "name": "Autoritatea Electorală Permanentă – Portalul Financiar",
+        "url": "https://finantarepartide.ro/",
+        "license": "Romanian public sector data; reuse allowed with attribution under Law 544/2001, but interface remains Romanian-only.",
+        "access_notes": "Provides PDFs and XLS exports of income/expense statements by electoral period.",
+        "requires_escalation": false
+      },
+      {
+        "name": "Expert Forum (EFOR) – Banometru Dashboard",
+        "url": "https://expertforum.ro/banometru/",
+        "license": "Creative Commons BY 4.0.",
+        "access_notes": "Civil-society aggregation of AEP disclosures with machine-readable timelines.",
+        "requires_escalation": false
+      }
+    ],
+    "commercial_sources": [
+      {
+        "name": "CEIC Data – Romania Government & Politics",
+        "url": "https://www.ceicdata.com/en",
+        "license": "Commercial subscription.",
+        "access_notes": "Includes harmonized election finance and public subsidy series for Romania.",
+        "requires_escalation": true
+      }
+    ],
+    "timeline_alignment_guidance": "AEP posts pre-campaign and campaign expenditure statements stamped with submission dates. Manual OCR may be required; align to submission_date to observe lagged effects on market prices.",
+    "additional_notes": "AEP publishes reimbursements in PDF; plan for OCR or manual digitization to generate structured time series."
+  },
+  {
+    "market_id": "519068",
+    "market_question": "Will Nicușor Dan win the Romanian presidential election?",
+    "jurisdiction": "Romania – National",
+    "office_level": "Presidential election",
+    "public_sources": [
+      {
+        "name": "Autoritatea Electorală Permanentă – Portalul Financiar",
+        "url": "https://finantarepartide.ro/",
+        "license": "Romanian public sector data; reuse allowed with attribution under Law 544/2001, but interface remains Romanian-only.",
+        "access_notes": "Provides PDFs and XLS exports of income/expense statements by electoral period.",
+        "requires_escalation": false
+      },
+      {
+        "name": "Expert Forum (EFOR) – Banometru Dashboard",
+        "url": "https://expertforum.ro/banometru/",
+        "license": "Creative Commons BY 4.0.",
+        "access_notes": "Civil-society aggregation of AEP disclosures with machine-readable timelines.",
+        "requires_escalation": false
+      }
+    ],
+    "commercial_sources": [
+      {
+        "name": "CEIC Data – Romania Government & Politics",
+        "url": "https://www.ceicdata.com/en",
+        "license": "Commercial subscription.",
+        "access_notes": "Includes harmonized election finance and public subsidy series for Romania.",
+        "requires_escalation": true
+      }
+    ],
+    "timeline_alignment_guidance": "AEP posts pre-campaign and campaign expenditure statements stamped with submission dates. Manual OCR may be required; align to submission_date to observe lagged effects on market prices.",
+    "additional_notes": "AEP publishes reimbursements in PDF; plan for OCR or manual digitization to generate structured time series."
+  },
+  {
+    "market_id": "534189",
+    "market_question": "Will Lee Jae-myung be elected the next president of South Korea?",
+    "jurisdiction": "South Korea – National",
+    "office_level": "Presidential election",
+    "public_sources": [
+      {
+        "name": "National Election Commission – Political Funds Integrated Information System",
+        "url": "https://nef.nec.go.kr/",
+        "license": "Korean public sector licence (KOGL Type 1); attribution required.",
+        "access_notes": "Campaign finance ledgers and subsidy disclosures with filing dates; site requires Korean interface navigation.",
+        "requires_escalation": false
+      },
+      {
+        "name": "Korean Statistical Information Service (KOSIS) – Political Funds",
+        "url": "https://kosis.kr/eng/",
+        "license": "KOGL Type 1; attribution required.",
+        "access_notes": "Aggregated annual receipts/expenditures by party and election.",
+        "requires_escalation": false
+      }
+    ],
+    "commercial_sources": [
+      {
+        "name": "Yonhap Infomax Election Finance",
+        "url": "https://www.yonhapinfomax.co.kr/",
+        "license": "Commercial subscription.",
+        "access_notes": "Real-time media monitoring and finance snapshots translated to English; essential for intra-day updates.",
+        "requires_escalation": true
+      }
+    ],
+    "timeline_alignment_guidance": "NEC system exports monthly ledgers with `report_date`. Use Korean Standard Time when mapping to price data; expect updates within 7 days of filing deadlines.",
+    "additional_notes": "NEC portal requires Korean language navigation; coordinate with bilingual analyst for data extraction."
+  },
+  {
+    "market_id": "534197",
+    "market_question": "Will Kim Moon-soo be elected the next president of South Korea?",
+    "jurisdiction": "South Korea – National",
+    "office_level": "Presidential election",
+    "public_sources": [
+      {
+        "name": "National Election Commission – Political Funds Integrated Information System",
+        "url": "https://nef.nec.go.kr/",
+        "license": "Korean public sector licence (KOGL Type 1); attribution required.",
+        "access_notes": "Campaign finance ledgers and subsidy disclosures with filing dates; site requires Korean interface navigation.",
+        "requires_escalation": false
+      },
+      {
+        "name": "Korean Statistical Information Service (KOSIS) – Political Funds",
+        "url": "https://kosis.kr/eng/",
+        "license": "KOGL Type 1; attribution required.",
+        "access_notes": "Aggregated annual receipts/expenditures by party and election.",
+        "requires_escalation": false
+      }
+    ],
+    "commercial_sources": [
+      {
+        "name": "Yonhap Infomax Election Finance",
+        "url": "https://www.yonhapinfomax.co.kr/",
+        "license": "Commercial subscription.",
+        "access_notes": "Real-time media monitoring and finance snapshots translated to English; essential for intra-day updates.",
+        "requires_escalation": true
+      }
+    ],
+    "timeline_alignment_guidance": "NEC system exports monthly ledgers with `report_date`. Use Korean Standard Time when mapping to price data; expect updates within 7 days of filing deadlines.",
+    "additional_notes": "NEC portal requires Korean language navigation; coordinate with bilingual analyst for data extraction."
+  },
+  {
+    "market_id": "534220",
+    "market_question": "Will Lee Jun-seok be elected the next president of South Korea?",
+    "jurisdiction": "South Korea – National",
+    "office_level": "Presidential election",
+    "public_sources": [
+      {
+        "name": "National Election Commission – Political Funds Integrated Information System",
+        "url": "https://nef.nec.go.kr/",
+        "license": "Korean public sector licence (KOGL Type 1); attribution required.",
+        "access_notes": "Campaign finance ledgers and subsidy disclosures with filing dates; site requires Korean interface navigation.",
+        "requires_escalation": false
+      },
+      {
+        "name": "Korean Statistical Information Service (KOSIS) – Political Funds",
+        "url": "https://kosis.kr/eng/",
+        "license": "KOGL Type 1; attribution required.",
+        "access_notes": "Aggregated annual receipts/expenditures by party and election.",
+        "requires_escalation": false
+      }
+    ],
+    "commercial_sources": [
+      {
+        "name": "Yonhap Infomax Election Finance",
+        "url": "https://www.yonhapinfomax.co.kr/",
+        "license": "Commercial subscription.",
+        "access_notes": "Real-time media monitoring and finance snapshots translated to English; essential for intra-day updates.",
+        "requires_escalation": true
+      }
+    ],
+    "timeline_alignment_guidance": "NEC system exports monthly ledgers with `report_date`. Use Korean Standard Time when mapping to price data; expect updates within 7 days of filing deadlines.",
+    "additional_notes": "NEC portal requires Korean language navigation; coordinate with bilingual analyst for data extraction."
+  },
+  {
+    "market_id": "514139",
+    "market_question": "Will Rafał Trzaskowski be the next President of Poland?",
+    "jurisdiction": "Poland – National",
+    "office_level": "Presidential election",
+    "public_sources": [
+      {
+        "name": "National Electoral Commission (PKW) – Election Finance Disclosures",
+        "url": "https://wybory.gov.pl",
+        "license": "Official government publication; reuse permitted with attribution.",
+        "access_notes": "Publishes committee financial statements and reimbursement reports post-election (PDF and XLS formats).",
+        "requires_escalation": false
+      },
+      {
+        "name": "OpenSpending Poland – Campaign Finance Explorer",
+        "url": "https://openspending.pl/",
+        "license": "CC BY 4.0 license.",
+        "access_notes": "Civil society digitization of PKW filings with CSV exports.",
+        "requires_escalation": false
+      }
+    ],
+    "commercial_sources": [
+      {
+        "name": "Emerging Europe Monitor (Fitch Solutions)",
+        "url": "https://www.fitchsolutions.com/",
+        "license": "Commercial subscription.",
+        "access_notes": "Provides capital-markets oriented election finance briefings for Central Europe.",
+        "requires_escalation": true
+      }
+    ],
+    "timeline_alignment_guidance": "PKW releases final committee statements approximately 3 months post-election. Align using report publication date, noting that intra-campaign finance transparency is limited.",
+    "additional_notes": "PKW releases deposits and reimbursement schedules; interim fundraising transparency is limited."
+  }
+]
