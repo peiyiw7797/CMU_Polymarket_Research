@@ -1,0 +1,1485 @@
+{
+  "United States": {
+    "level": "national",
+    "sources": [
+      {
+        "name": "Federal Election Commission \u2013 Certified Results and Filings",
+        "url": "https://www.fec.gov/data/",
+        "description": "Official certified federal election results, candidate filings, and independent expenditure reports.",
+        "access": "Open government data",
+        "update_frequency": "Daily during election periods; certified results after canvass (weeks).",
+        "feasibility": "High",
+        "feasibility_notes": "Legally authoritative with structured CSV/JSON downloads; lag tied to state certification but reliable for federal races."
+      },
+      {
+        "name": "Associated Press Elections API",
+        "url": "https://developer.ap.org/ap-elections-api/",
+        "description": "Real-time and historical race calls across federal and statewide contests.",
+        "access": "Commercial license",
+        "update_frequency": "Minutes during election night; periodic thereafter.",
+        "feasibility": "High",
+        "feasibility_notes": "Industry-standard feed for rapid projections; requires paid access and integration work."
+      },
+      {
+        "name": "MIT Election Data and Science Lab \u2013 Official Returns",
+        "url": "https://electionlab.mit.edu/data",
+        "description": "Aggregated precinct- and county-level results in machine-readable formats.",
+        "access": "Open academic use",
+        "update_frequency": "Released weeks to months after certification.",
+        "feasibility": "Medium",
+        "feasibility_notes": "High data quality but slower refresh cadence; excellent for retrospective validation."
+      }
+    ]
+  },
+  "Nevada": {
+    "level": "state",
+    "sources": [
+      {
+        "name": "Nevada election office",
+        "url": "https://www.nvsos.gov/sos/elections",
+        "description": "Certified statewide and county results plus candidate filings.",
+        "access": "Official (open web)",
+        "update_frequency": "Nightly during canvass; certification per statutory calendar.",
+        "feasibility": "High",
+        "feasibility_notes": "Authoritative counts with predictable publication cadence; may require PDF/CSV parsing."
+      },
+      {
+        "name": "Ballotpedia \u2013 Nevada elections portal",
+        "url": "https://ballotpedia.org/Nevada",
+        "description": "Aggregated election calendars, candidate rosters, and unofficial vote tallies.",
+        "access": "Open web (CC BY-SA)",
+        "update_frequency": "Daily during election periods; slower off-cycle.",
+        "feasibility": "Medium",
+        "feasibility_notes": "Rich historical context; manual scraping necessary for automated ingestion."
+      },
+      {
+        "name": "Decision Desk HQ Results Feed",
+        "url": "https://results.decisiondeskhq.com/",
+        "description": "Paid API for precinct and county level tallies across US states.",
+        "access": "Commercial API",
+        "update_frequency": "Minutes on election night; hourly thereafter.",
+        "feasibility": "High",
+        "feasibility_notes": "Fast and structured but gated behind subscription and integration work."
+      }
+    ]
+  },
+  "Pennsylvania": {
+    "level": "state",
+    "sources": [
+      {
+        "name": "Pennsylvania election office",
+        "url": "https://www.dos.pa.gov/VotingElections/Pages/default.aspx",
+        "description": "Certified statewide and county results plus candidate filings.",
+        "access": "Official (open web)",
+        "update_frequency": "Nightly during canvass; certification per statutory calendar.",
+        "feasibility": "High",
+        "feasibility_notes": "Authoritative counts with predictable publication cadence; may require PDF/CSV parsing."
+      },
+      {
+        "name": "Ballotpedia \u2013 Pennsylvania elections portal",
+        "url": "https://ballotpedia.org/Pennsylvania",
+        "description": "Aggregated election calendars, candidate rosters, and unofficial vote tallies.",
+        "access": "Open web (CC BY-SA)",
+        "update_frequency": "Daily during election periods; slower off-cycle.",
+        "feasibility": "Medium",
+        "feasibility_notes": "Rich historical context; manual scraping necessary for automated ingestion."
+      },
+      {
+        "name": "Decision Desk HQ Results Feed",
+        "url": "https://results.decisiondeskhq.com/",
+        "description": "Paid API for precinct and county level tallies across US states.",
+        "access": "Commercial API",
+        "update_frequency": "Minutes on election night; hourly thereafter.",
+        "feasibility": "High",
+        "feasibility_notes": "Fast and structured but gated behind subscription and integration work."
+      }
+    ]
+  },
+  "Wisconsin": {
+    "level": "state",
+    "sources": [
+      {
+        "name": "Wisconsin election office",
+        "url": "https://myvote.wi.gov/en-us/",
+        "description": "Certified statewide and county results plus candidate filings.",
+        "access": "Official (open web)",
+        "update_frequency": "Nightly during canvass; certification per statutory calendar.",
+        "feasibility": "High",
+        "feasibility_notes": "Authoritative counts with predictable publication cadence; may require PDF/CSV parsing."
+      },
+      {
+        "name": "Ballotpedia \u2013 Wisconsin elections portal",
+        "url": "https://ballotpedia.org/Wisconsin",
+        "description": "Aggregated election calendars, candidate rosters, and unofficial vote tallies.",
+        "access": "Open web (CC BY-SA)",
+        "update_frequency": "Daily during election periods; slower off-cycle.",
+        "feasibility": "Medium",
+        "feasibility_notes": "Rich historical context; manual scraping necessary for automated ingestion."
+      },
+      {
+        "name": "Decision Desk HQ Results Feed",
+        "url": "https://results.decisiondeskhq.com/",
+        "description": "Paid API for precinct and county level tallies across US states.",
+        "access": "Commercial API",
+        "update_frequency": "Minutes on election night; hourly thereafter.",
+        "feasibility": "High",
+        "feasibility_notes": "Fast and structured but gated behind subscription and integration work."
+      }
+    ]
+  },
+  "Montana": {
+    "level": "state",
+    "sources": [
+      {
+        "name": "Montana election office",
+        "url": "https://sosmt.gov/elections/",
+        "description": "Certified statewide and county results plus candidate filings.",
+        "access": "Official (open web)",
+        "update_frequency": "Nightly during canvass; certification per statutory calendar.",
+        "feasibility": "High",
+        "feasibility_notes": "Authoritative counts with predictable publication cadence; may require PDF/CSV parsing."
+      },
+      {
+        "name": "Ballotpedia \u2013 Montana elections portal",
+        "url": "https://ballotpedia.org/Montana",
+        "description": "Aggregated election calendars, candidate rosters, and unofficial vote tallies.",
+        "access": "Open web (CC BY-SA)",
+        "update_frequency": "Daily during election periods; slower off-cycle.",
+        "feasibility": "Medium",
+        "feasibility_notes": "Rich historical context; manual scraping necessary for automated ingestion."
+      },
+      {
+        "name": "Decision Desk HQ Results Feed",
+        "url": "https://results.decisiondeskhq.com/",
+        "description": "Paid API for precinct and county level tallies across US states.",
+        "access": "Commercial API",
+        "update_frequency": "Minutes on election night; hourly thereafter.",
+        "feasibility": "High",
+        "feasibility_notes": "Fast and structured but gated behind subscription and integration work."
+      }
+    ]
+  },
+  "Ohio": {
+    "level": "state",
+    "sources": [
+      {
+        "name": "Ohio election office",
+        "url": "https://www.sos.state.oh.us/elections/voters/",
+        "description": "Certified statewide and county results plus candidate filings.",
+        "access": "Official (open web)",
+        "update_frequency": "Nightly during canvass; certification per statutory calendar.",
+        "feasibility": "High",
+        "feasibility_notes": "Authoritative counts with predictable publication cadence; may require PDF/CSV parsing."
+      },
+      {
+        "name": "Ballotpedia \u2013 Ohio elections portal",
+        "url": "https://ballotpedia.org/Ohio",
+        "description": "Aggregated election calendars, candidate rosters, and unofficial vote tallies.",
+        "access": "Open web (CC BY-SA)",
+        "update_frequency": "Daily during election periods; slower off-cycle.",
+        "feasibility": "Medium",
+        "feasibility_notes": "Rich historical context; manual scraping necessary for automated ingestion."
+      },
+      {
+        "name": "Decision Desk HQ Results Feed",
+        "url": "https://results.decisiondeskhq.com/",
+        "description": "Paid API for precinct and county level tallies across US states.",
+        "access": "Commercial API",
+        "update_frequency": "Minutes on election night; hourly thereafter.",
+        "feasibility": "High",
+        "feasibility_notes": "Fast and structured but gated behind subscription and integration work."
+      }
+    ]
+  },
+  "Arizona": {
+    "level": "state",
+    "sources": [
+      {
+        "name": "Arizona election office",
+        "url": "https://azsos.gov/elections",
+        "description": "Certified statewide and county results plus candidate filings.",
+        "access": "Official (open web)",
+        "update_frequency": "Nightly during canvass; certification per statutory calendar.",
+        "feasibility": "High",
+        "feasibility_notes": "Authoritative counts with predictable publication cadence; may require PDF/CSV parsing."
+      },
+      {
+        "name": "Ballotpedia \u2013 Arizona elections portal",
+        "url": "https://ballotpedia.org/Arizona",
+        "description": "Aggregated election calendars, candidate rosters, and unofficial vote tallies.",
+        "access": "Open web (CC BY-SA)",
+        "update_frequency": "Daily during election periods; slower off-cycle.",
+        "feasibility": "Medium",
+        "feasibility_notes": "Rich historical context; manual scraping necessary for automated ingestion."
+      },
+      {
+        "name": "Decision Desk HQ Results Feed",
+        "url": "https://results.decisiondeskhq.com/",
+        "description": "Paid API for precinct and county level tallies across US states.",
+        "access": "Commercial API",
+        "update_frequency": "Minutes on election night; hourly thereafter.",
+        "feasibility": "High",
+        "feasibility_notes": "Fast and structured but gated behind subscription and integration work."
+      }
+    ]
+  },
+  "Texas": {
+    "level": "state",
+    "sources": [
+      {
+        "name": "Texas election office",
+        "url": "https://www.sos.state.tx.us/elections/index.shtml",
+        "description": "Certified statewide and county results plus candidate filings.",
+        "access": "Official (open web)",
+        "update_frequency": "Nightly during canvass; certification per statutory calendar.",
+        "feasibility": "High",
+        "feasibility_notes": "Authoritative counts with predictable publication cadence; may require PDF/CSV parsing."
+      },
+      {
+        "name": "Ballotpedia \u2013 Texas elections portal",
+        "url": "https://ballotpedia.org/Texas",
+        "description": "Aggregated election calendars, candidate rosters, and unofficial vote tallies.",
+        "access": "Open web (CC BY-SA)",
+        "update_frequency": "Daily during election periods; slower off-cycle.",
+        "feasibility": "Medium",
+        "feasibility_notes": "Rich historical context; manual scraping necessary for automated ingestion."
+      },
+      {
+        "name": "Decision Desk HQ Results Feed",
+        "url": "https://results.decisiondeskhq.com/",
+        "description": "Paid API for precinct and county level tallies across US states.",
+        "access": "Commercial API",
+        "update_frequency": "Minutes on election night; hourly thereafter.",
+        "feasibility": "High",
+        "feasibility_notes": "Fast and structured but gated behind subscription and integration work."
+      }
+    ]
+  },
+  "Maryland": {
+    "level": "state",
+    "sources": [
+      {
+        "name": "Maryland election office",
+        "url": "https://elections.maryland.gov/",
+        "description": "Certified statewide and county results plus candidate filings.",
+        "access": "Official (open web)",
+        "update_frequency": "Nightly during canvass; certification per statutory calendar.",
+        "feasibility": "High",
+        "feasibility_notes": "Authoritative counts with predictable publication cadence; may require PDF/CSV parsing."
+      },
+      {
+        "name": "Ballotpedia \u2013 Maryland elections portal",
+        "url": "https://ballotpedia.org/Maryland",
+        "description": "Aggregated election calendars, candidate rosters, and unofficial vote tallies.",
+        "access": "Open web (CC BY-SA)",
+        "update_frequency": "Daily during election periods; slower off-cycle.",
+        "feasibility": "Medium",
+        "feasibility_notes": "Rich historical context; manual scraping necessary for automated ingestion."
+      },
+      {
+        "name": "Decision Desk HQ Results Feed",
+        "url": "https://results.decisiondeskhq.com/",
+        "description": "Paid API for precinct and county level tallies across US states.",
+        "access": "Commercial API",
+        "update_frequency": "Minutes on election night; hourly thereafter.",
+        "feasibility": "High",
+        "feasibility_notes": "Fast and structured but gated behind subscription and integration work."
+      }
+    ]
+  },
+  "Florida": {
+    "level": "state",
+    "sources": [
+      {
+        "name": "Florida election office",
+        "url": "https://www.dos.myflorida.com/elections/",
+        "description": "Certified statewide and county results plus candidate filings.",
+        "access": "Official (open web)",
+        "update_frequency": "Nightly during canvass; certification per statutory calendar.",
+        "feasibility": "High",
+        "feasibility_notes": "Authoritative counts with predictable publication cadence; may require PDF/CSV parsing."
+      },
+      {
+        "name": "Ballotpedia \u2013 Florida elections portal",
+        "url": "https://ballotpedia.org/Florida",
+        "description": "Aggregated election calendars, candidate rosters, and unofficial vote tallies.",
+        "access": "Open web (CC BY-SA)",
+        "update_frequency": "Daily during election periods; slower off-cycle.",
+        "feasibility": "Medium",
+        "feasibility_notes": "Rich historical context; manual scraping necessary for automated ingestion."
+      },
+      {
+        "name": "Decision Desk HQ Results Feed",
+        "url": "https://results.decisiondeskhq.com/",
+        "description": "Paid API for precinct and county level tallies across US states.",
+        "access": "Commercial API",
+        "update_frequency": "Minutes on election night; hourly thereafter.",
+        "feasibility": "High",
+        "feasibility_notes": "Fast and structured but gated behind subscription and integration work."
+      }
+    ]
+  },
+  "California": {
+    "level": "state",
+    "sources": [
+      {
+        "name": "California election office",
+        "url": "https://www.sos.ca.gov/elections",
+        "description": "Certified statewide and county results plus candidate filings.",
+        "access": "Official (open web)",
+        "update_frequency": "Nightly during canvass; certification per statutory calendar.",
+        "feasibility": "High",
+        "feasibility_notes": "Authoritative counts with predictable publication cadence; may require PDF/CSV parsing."
+      },
+      {
+        "name": "Ballotpedia \u2013 California elections portal",
+        "url": "https://ballotpedia.org/California",
+        "description": "Aggregated election calendars, candidate rosters, and unofficial vote tallies.",
+        "access": "Open web (CC BY-SA)",
+        "update_frequency": "Daily during election periods; slower off-cycle.",
+        "feasibility": "Medium",
+        "feasibility_notes": "Rich historical context; manual scraping necessary for automated ingestion."
+      },
+      {
+        "name": "Decision Desk HQ Results Feed",
+        "url": "https://results.decisiondeskhq.com/",
+        "description": "Paid API for precinct and county level tallies across US states.",
+        "access": "Commercial API",
+        "update_frequency": "Minutes on election night; hourly thereafter.",
+        "feasibility": "High",
+        "feasibility_notes": "Fast and structured but gated behind subscription and integration work."
+      }
+    ]
+  },
+  "Washington": {
+    "level": "state",
+    "sources": [
+      {
+        "name": "Washington election office",
+        "url": "https://www.sos.wa.gov/elections",
+        "description": "Certified statewide and county results plus candidate filings.",
+        "access": "Official (open web)",
+        "update_frequency": "Nightly during canvass; certification per statutory calendar.",
+        "feasibility": "High",
+        "feasibility_notes": "Authoritative counts with predictable publication cadence; may require PDF/CSV parsing."
+      },
+      {
+        "name": "Ballotpedia \u2013 Washington elections portal",
+        "url": "https://ballotpedia.org/Washington",
+        "description": "Aggregated election calendars, candidate rosters, and unofficial vote tallies.",
+        "access": "Open web (CC BY-SA)",
+        "update_frequency": "Daily during election periods; slower off-cycle.",
+        "feasibility": "Medium",
+        "feasibility_notes": "Rich historical context; manual scraping necessary for automated ingestion."
+      },
+      {
+        "name": "Decision Desk HQ Results Feed",
+        "url": "https://results.decisiondeskhq.com/",
+        "description": "Paid API for precinct and county level tallies across US states.",
+        "access": "Commercial API",
+        "update_frequency": "Minutes on election night; hourly thereafter.",
+        "feasibility": "High",
+        "feasibility_notes": "Fast and structured but gated behind subscription and integration work."
+      }
+    ]
+  },
+  "Utah": {
+    "level": "state",
+    "sources": [
+      {
+        "name": "Utah election office",
+        "url": "https://vote.utah.gov/",
+        "description": "Certified statewide and county results plus candidate filings.",
+        "access": "Official (open web)",
+        "update_frequency": "Nightly during canvass; certification per statutory calendar.",
+        "feasibility": "High",
+        "feasibility_notes": "Authoritative counts with predictable publication cadence; may require PDF/CSV parsing."
+      },
+      {
+        "name": "Ballotpedia \u2013 Utah elections portal",
+        "url": "https://ballotpedia.org/Utah",
+        "description": "Aggregated election calendars, candidate rosters, and unofficial vote tallies.",
+        "access": "Open web (CC BY-SA)",
+        "update_frequency": "Daily during election periods; slower off-cycle.",
+        "feasibility": "Medium",
+        "feasibility_notes": "Rich historical context; manual scraping necessary for automated ingestion."
+      },
+      {
+        "name": "Decision Desk HQ Results Feed",
+        "url": "https://results.decisiondeskhq.com/",
+        "description": "Paid API for precinct and county level tallies across US states.",
+        "access": "Commercial API",
+        "update_frequency": "Minutes on election night; hourly thereafter.",
+        "feasibility": "High",
+        "feasibility_notes": "Fast and structured but gated behind subscription and integration work."
+      }
+    ]
+  },
+  "Wyoming": {
+    "level": "state",
+    "sources": [
+      {
+        "name": "Wyoming election office",
+        "url": "https://sos.wyo.gov/Elections/Default.aspx",
+        "description": "Certified statewide and county results plus candidate filings.",
+        "access": "Official (open web)",
+        "update_frequency": "Nightly during canvass; certification per statutory calendar.",
+        "feasibility": "High",
+        "feasibility_notes": "Authoritative counts with predictable publication cadence; may require PDF/CSV parsing."
+      },
+      {
+        "name": "Ballotpedia \u2013 Wyoming elections portal",
+        "url": "https://ballotpedia.org/Wyoming",
+        "description": "Aggregated election calendars, candidate rosters, and unofficial vote tallies.",
+        "access": "Open web (CC BY-SA)",
+        "update_frequency": "Daily during election periods; slower off-cycle.",
+        "feasibility": "Medium",
+        "feasibility_notes": "Rich historical context; manual scraping necessary for automated ingestion."
+      },
+      {
+        "name": "Decision Desk HQ Results Feed",
+        "url": "https://results.decisiondeskhq.com/",
+        "description": "Paid API for precinct and county level tallies across US states.",
+        "access": "Commercial API",
+        "update_frequency": "Minutes on election night; hourly thereafter.",
+        "feasibility": "High",
+        "feasibility_notes": "Fast and structured but gated behind subscription and integration work."
+      }
+    ]
+  },
+  "New Mexico": {
+    "level": "state",
+    "sources": [
+      {
+        "name": "New Mexico election office",
+        "url": "https://www.sos.nm.gov/voting-and-elections/voter-information-portal-nmvote-org/",
+        "description": "Certified statewide and county results plus candidate filings.",
+        "access": "Official (open web)",
+        "update_frequency": "Nightly during canvass; certification per statutory calendar.",
+        "feasibility": "High",
+        "feasibility_notes": "Authoritative counts with predictable publication cadence; may require PDF/CSV parsing."
+      },
+      {
+        "name": "Ballotpedia \u2013 New Mexico elections portal",
+        "url": "https://ballotpedia.org/New_Mexico",
+        "description": "Aggregated election calendars, candidate rosters, and unofficial vote tallies.",
+        "access": "Open web (CC BY-SA)",
+        "update_frequency": "Daily during election periods; slower off-cycle.",
+        "feasibility": "Medium",
+        "feasibility_notes": "Rich historical context; manual scraping necessary for automated ingestion."
+      },
+      {
+        "name": "Decision Desk HQ Results Feed",
+        "url": "https://results.decisiondeskhq.com/",
+        "description": "Paid API for precinct and county level tallies across US states.",
+        "access": "Commercial API",
+        "update_frequency": "Minutes on election night; hourly thereafter.",
+        "feasibility": "High",
+        "feasibility_notes": "Fast and structured but gated behind subscription and integration work."
+      }
+    ]
+  },
+  "North Dakota": {
+    "level": "state",
+    "sources": [
+      {
+        "name": "North Dakota election office",
+        "url": "https://vip.sos.nd.gov/PortalList.aspx",
+        "description": "Certified statewide and county results plus candidate filings.",
+        "access": "Official (open web)",
+        "update_frequency": "Nightly during canvass; certification per statutory calendar.",
+        "feasibility": "High",
+        "feasibility_notes": "Authoritative counts with predictable publication cadence; may require PDF/CSV parsing."
+      },
+      {
+        "name": "Ballotpedia \u2013 North Dakota elections portal",
+        "url": "https://ballotpedia.org/North_Dakota",
+        "description": "Aggregated election calendars, candidate rosters, and unofficial vote tallies.",
+        "access": "Open web (CC BY-SA)",
+        "update_frequency": "Daily during election periods; slower off-cycle.",
+        "feasibility": "Medium",
+        "feasibility_notes": "Rich historical context; manual scraping necessary for automated ingestion."
+      },
+      {
+        "name": "Decision Desk HQ Results Feed",
+        "url": "https://results.decisiondeskhq.com/",
+        "description": "Paid API for precinct and county level tallies across US states.",
+        "access": "Commercial API",
+        "update_frequency": "Minutes on election night; hourly thereafter.",
+        "feasibility": "High",
+        "feasibility_notes": "Fast and structured but gated behind subscription and integration work."
+      }
+    ]
+  },
+  "Nebraska": {
+    "level": "state",
+    "sources": [
+      {
+        "name": "Nebraska election office",
+        "url": "https://www.nebraska.gov/featured/elections-voting/",
+        "description": "Certified statewide and county results plus candidate filings.",
+        "access": "Official (open web)",
+        "update_frequency": "Nightly during canvass; certification per statutory calendar.",
+        "feasibility": "High",
+        "feasibility_notes": "Authoritative counts with predictable publication cadence; may require PDF/CSV parsing."
+      },
+      {
+        "name": "Ballotpedia \u2013 Nebraska elections portal",
+        "url": "https://ballotpedia.org/Nebraska",
+        "description": "Aggregated election calendars, candidate rosters, and unofficial vote tallies.",
+        "access": "Open web (CC BY-SA)",
+        "update_frequency": "Daily during election periods; slower off-cycle.",
+        "feasibility": "Medium",
+        "feasibility_notes": "Rich historical context; manual scraping necessary for automated ingestion."
+      },
+      {
+        "name": "Decision Desk HQ Results Feed",
+        "url": "https://results.decisiondeskhq.com/",
+        "description": "Paid API for precinct and county level tallies across US states.",
+        "access": "Commercial API",
+        "update_frequency": "Minutes on election night; hourly thereafter.",
+        "feasibility": "High",
+        "feasibility_notes": "Fast and structured but gated behind subscription and integration work."
+      }
+    ]
+  },
+  "Minnesota": {
+    "level": "state",
+    "sources": [
+      {
+        "name": "Minnesota election office",
+        "url": "https://www.sos.state.mn.us/elections-voting/",
+        "description": "Certified statewide and county results plus candidate filings.",
+        "access": "Official (open web)",
+        "update_frequency": "Nightly during canvass; certification per statutory calendar.",
+        "feasibility": "High",
+        "feasibility_notes": "Authoritative counts with predictable publication cadence; may require PDF/CSV parsing."
+      },
+      {
+        "name": "Ballotpedia \u2013 Minnesota elections portal",
+        "url": "https://ballotpedia.org/Minnesota",
+        "description": "Aggregated election calendars, candidate rosters, and unofficial vote tallies.",
+        "access": "Open web (CC BY-SA)",
+        "update_frequency": "Daily during election periods; slower off-cycle.",
+        "feasibility": "Medium",
+        "feasibility_notes": "Rich historical context; manual scraping necessary for automated ingestion."
+      },
+      {
+        "name": "Decision Desk HQ Results Feed",
+        "url": "https://results.decisiondeskhq.com/",
+        "description": "Paid API for precinct and county level tallies across US states.",
+        "access": "Commercial API",
+        "update_frequency": "Minutes on election night; hourly thereafter.",
+        "feasibility": "High",
+        "feasibility_notes": "Fast and structured but gated behind subscription and integration work."
+      }
+    ]
+  },
+  "Missouri": {
+    "level": "state",
+    "sources": [
+      {
+        "name": "Missouri election office",
+        "url": "https://www.sos.mo.gov/elections/",
+        "description": "Certified statewide and county results plus candidate filings.",
+        "access": "Official (open web)",
+        "update_frequency": "Nightly during canvass; certification per statutory calendar.",
+        "feasibility": "High",
+        "feasibility_notes": "Authoritative counts with predictable publication cadence; may require PDF/CSV parsing."
+      },
+      {
+        "name": "Ballotpedia \u2013 Missouri elections portal",
+        "url": "https://ballotpedia.org/Missouri",
+        "description": "Aggregated election calendars, candidate rosters, and unofficial vote tallies.",
+        "access": "Open web (CC BY-SA)",
+        "update_frequency": "Daily during election periods; slower off-cycle.",
+        "feasibility": "Medium",
+        "feasibility_notes": "Rich historical context; manual scraping necessary for automated ingestion."
+      },
+      {
+        "name": "Decision Desk HQ Results Feed",
+        "url": "https://results.decisiondeskhq.com/",
+        "description": "Paid API for precinct and county level tallies across US states.",
+        "access": "Commercial API",
+        "update_frequency": "Minutes on election night; hourly thereafter.",
+        "feasibility": "High",
+        "feasibility_notes": "Fast and structured but gated behind subscription and integration work."
+      }
+    ]
+  },
+  "Tennessee": {
+    "level": "state",
+    "sources": [
+      {
+        "name": "Tennessee election office",
+        "url": "https://sos.tn.gov/elections",
+        "description": "Certified statewide and county results plus candidate filings.",
+        "access": "Official (open web)",
+        "update_frequency": "Nightly during canvass; certification per statutory calendar.",
+        "feasibility": "High",
+        "feasibility_notes": "Authoritative counts with predictable publication cadence; may require PDF/CSV parsing."
+      },
+      {
+        "name": "Ballotpedia \u2013 Tennessee elections portal",
+        "url": "https://ballotpedia.org/Tennessee",
+        "description": "Aggregated election calendars, candidate rosters, and unofficial vote tallies.",
+        "access": "Open web (CC BY-SA)",
+        "update_frequency": "Daily during election periods; slower off-cycle.",
+        "feasibility": "Medium",
+        "feasibility_notes": "Rich historical context; manual scraping necessary for automated ingestion."
+      },
+      {
+        "name": "Decision Desk HQ Results Feed",
+        "url": "https://results.decisiondeskhq.com/",
+        "description": "Paid API for precinct and county level tallies across US states.",
+        "access": "Commercial API",
+        "update_frequency": "Minutes on election night; hourly thereafter.",
+        "feasibility": "High",
+        "feasibility_notes": "Fast and structured but gated behind subscription and integration work."
+      }
+    ]
+  },
+  "Mississippi": {
+    "level": "state",
+    "sources": [
+      {
+        "name": "Mississippi election office",
+        "url": "https://www.sos.ms.gov/elections-voting",
+        "description": "Certified statewide and county results plus candidate filings.",
+        "access": "Official (open web)",
+        "update_frequency": "Nightly during canvass; certification per statutory calendar.",
+        "feasibility": "High",
+        "feasibility_notes": "Authoritative counts with predictable publication cadence; may require PDF/CSV parsing."
+      },
+      {
+        "name": "Ballotpedia \u2013 Mississippi elections portal",
+        "url": "https://ballotpedia.org/Mississippi",
+        "description": "Aggregated election calendars, candidate rosters, and unofficial vote tallies.",
+        "access": "Open web (CC BY-SA)",
+        "update_frequency": "Daily during election periods; slower off-cycle.",
+        "feasibility": "Medium",
+        "feasibility_notes": "Rich historical context; manual scraping necessary for automated ingestion."
+      },
+      {
+        "name": "Decision Desk HQ Results Feed",
+        "url": "https://results.decisiondeskhq.com/",
+        "description": "Paid API for precinct and county level tallies across US states.",
+        "access": "Commercial API",
+        "update_frequency": "Minutes on election night; hourly thereafter.",
+        "feasibility": "High",
+        "feasibility_notes": "Fast and structured but gated behind subscription and integration work."
+      }
+    ]
+  },
+  "Indiana": {
+    "level": "state",
+    "sources": [
+      {
+        "name": "Indiana election office",
+        "url": "https://indianavoters.in.gov/",
+        "description": "Certified statewide and county results plus candidate filings.",
+        "access": "Official (open web)",
+        "update_frequency": "Nightly during canvass; certification per statutory calendar.",
+        "feasibility": "High",
+        "feasibility_notes": "Authoritative counts with predictable publication cadence; may require PDF/CSV parsing."
+      },
+      {
+        "name": "Ballotpedia \u2013 Indiana elections portal",
+        "url": "https://ballotpedia.org/Indiana",
+        "description": "Aggregated election calendars, candidate rosters, and unofficial vote tallies.",
+        "access": "Open web (CC BY-SA)",
+        "update_frequency": "Daily during election periods; slower off-cycle.",
+        "feasibility": "Medium",
+        "feasibility_notes": "Rich historical context; manual scraping necessary for automated ingestion."
+      },
+      {
+        "name": "Decision Desk HQ Results Feed",
+        "url": "https://results.decisiondeskhq.com/",
+        "description": "Paid API for precinct and county level tallies across US states.",
+        "access": "Commercial API",
+        "update_frequency": "Minutes on election night; hourly thereafter.",
+        "feasibility": "High",
+        "feasibility_notes": "Fast and structured but gated behind subscription and integration work."
+      }
+    ]
+  },
+  "Virginia": {
+    "level": "state",
+    "sources": [
+      {
+        "name": "Virginia election office",
+        "url": "https://www.elections.virginia.gov/",
+        "description": "Certified statewide and county results plus candidate filings.",
+        "access": "Official (open web)",
+        "update_frequency": "Nightly during canvass; certification per statutory calendar.",
+        "feasibility": "High",
+        "feasibility_notes": "Authoritative counts with predictable publication cadence; may require PDF/CSV parsing."
+      },
+      {
+        "name": "Ballotpedia \u2013 Virginia elections portal",
+        "url": "https://ballotpedia.org/Virginia",
+        "description": "Aggregated election calendars, candidate rosters, and unofficial vote tallies.",
+        "access": "Open web (CC BY-SA)",
+        "update_frequency": "Daily during election periods; slower off-cycle.",
+        "feasibility": "Medium",
+        "feasibility_notes": "Rich historical context; manual scraping necessary for automated ingestion."
+      },
+      {
+        "name": "Decision Desk HQ Results Feed",
+        "url": "https://results.decisiondeskhq.com/",
+        "description": "Paid API for precinct and county level tallies across US states.",
+        "access": "Commercial API",
+        "update_frequency": "Minutes on election night; hourly thereafter.",
+        "feasibility": "High",
+        "feasibility_notes": "Fast and structured but gated behind subscription and integration work."
+      }
+    ]
+  },
+  "Delaware": {
+    "level": "state",
+    "sources": [
+      {
+        "name": "Delaware election office",
+        "url": "https://elections.delaware.gov/index.shtml",
+        "description": "Certified statewide and county results plus candidate filings.",
+        "access": "Official (open web)",
+        "update_frequency": "Nightly during canvass; certification per statutory calendar.",
+        "feasibility": "High",
+        "feasibility_notes": "Authoritative counts with predictable publication cadence; may require PDF/CSV parsing."
+      },
+      {
+        "name": "Ballotpedia \u2013 Delaware elections portal",
+        "url": "https://ballotpedia.org/Delaware",
+        "description": "Aggregated election calendars, candidate rosters, and unofficial vote tallies.",
+        "access": "Open web (CC BY-SA)",
+        "update_frequency": "Daily during election periods; slower off-cycle.",
+        "feasibility": "Medium",
+        "feasibility_notes": "Rich historical context; manual scraping necessary for automated ingestion."
+      },
+      {
+        "name": "Decision Desk HQ Results Feed",
+        "url": "https://results.decisiondeskhq.com/",
+        "description": "Paid API for precinct and county level tallies across US states.",
+        "access": "Commercial API",
+        "update_frequency": "Minutes on election night; hourly thereafter.",
+        "feasibility": "High",
+        "feasibility_notes": "Fast and structured but gated behind subscription and integration work."
+      }
+    ]
+  },
+  "New Jersey": {
+    "level": "state",
+    "sources": [
+      {
+        "name": "New Jersey election office",
+        "url": "https://www.nj.gov/state/elections/vote.shtml",
+        "description": "Certified statewide and county results plus candidate filings.",
+        "access": "Official (open web)",
+        "update_frequency": "Nightly during canvass; certification per statutory calendar.",
+        "feasibility": "High",
+        "feasibility_notes": "Authoritative counts with predictable publication cadence; may require PDF/CSV parsing."
+      },
+      {
+        "name": "Ballotpedia \u2013 New Jersey elections portal",
+        "url": "https://ballotpedia.org/New_Jersey",
+        "description": "Aggregated election calendars, candidate rosters, and unofficial vote tallies.",
+        "access": "Open web (CC BY-SA)",
+        "update_frequency": "Daily during election periods; slower off-cycle.",
+        "feasibility": "Medium",
+        "feasibility_notes": "Rich historical context; manual scraping necessary for automated ingestion."
+      },
+      {
+        "name": "Decision Desk HQ Results Feed",
+        "url": "https://results.decisiondeskhq.com/",
+        "description": "Paid API for precinct and county level tallies across US states.",
+        "access": "Commercial API",
+        "update_frequency": "Minutes on election night; hourly thereafter.",
+        "feasibility": "High",
+        "feasibility_notes": "Fast and structured but gated behind subscription and integration work."
+      }
+    ]
+  },
+  "New York": {
+    "level": "state",
+    "sources": [
+      {
+        "name": "New York election office",
+        "url": "https://www.elections.ny.gov/",
+        "description": "Certified statewide and county results plus candidate filings.",
+        "access": "Official (open web)",
+        "update_frequency": "Nightly during canvass; certification per statutory calendar.",
+        "feasibility": "High",
+        "feasibility_notes": "Authoritative counts with predictable publication cadence; may require PDF/CSV parsing."
+      },
+      {
+        "name": "Ballotpedia \u2013 New York elections portal",
+        "url": "https://ballotpedia.org/New_York",
+        "description": "Aggregated election calendars, candidate rosters, and unofficial vote tallies.",
+        "access": "Open web (CC BY-SA)",
+        "update_frequency": "Daily during election periods; slower off-cycle.",
+        "feasibility": "Medium",
+        "feasibility_notes": "Rich historical context; manual scraping necessary for automated ingestion."
+      },
+      {
+        "name": "Decision Desk HQ Results Feed",
+        "url": "https://results.decisiondeskhq.com/",
+        "description": "Paid API for precinct and county level tallies across US states.",
+        "access": "Commercial API",
+        "update_frequency": "Minutes on election night; hourly thereafter.",
+        "feasibility": "High",
+        "feasibility_notes": "Fast and structured but gated behind subscription and integration work."
+      }
+    ]
+  },
+  "Connecticut": {
+    "level": "state",
+    "sources": [
+      {
+        "name": "Connecticut election office",
+        "url": "https://portal.ct.gov/sots/common-elements/v5-template---redesign/elections--voting--home-page",
+        "description": "Certified statewide and county results plus candidate filings.",
+        "access": "Official (open web)",
+        "update_frequency": "Nightly during canvass; certification per statutory calendar.",
+        "feasibility": "High",
+        "feasibility_notes": "Authoritative counts with predictable publication cadence; may require PDF/CSV parsing."
+      },
+      {
+        "name": "Ballotpedia \u2013 Connecticut elections portal",
+        "url": "https://ballotpedia.org/Connecticut",
+        "description": "Aggregated election calendars, candidate rosters, and unofficial vote tallies.",
+        "access": "Open web (CC BY-SA)",
+        "update_frequency": "Daily during election periods; slower off-cycle.",
+        "feasibility": "Medium",
+        "feasibility_notes": "Rich historical context; manual scraping necessary for automated ingestion."
+      },
+      {
+        "name": "Decision Desk HQ Results Feed",
+        "url": "https://results.decisiondeskhq.com/",
+        "description": "Paid API for precinct and county level tallies across US states.",
+        "access": "Commercial API",
+        "update_frequency": "Minutes on election night; hourly thereafter.",
+        "feasibility": "High",
+        "feasibility_notes": "Fast and structured but gated behind subscription and integration work."
+      }
+    ]
+  },
+  "Massachusetts": {
+    "level": "state",
+    "sources": [
+      {
+        "name": "Massachusetts election office",
+        "url": "https://www.sec.state.ma.us/divisions/elections/elections-and-voting.htm",
+        "description": "Certified statewide and county results plus candidate filings.",
+        "access": "Official (open web)",
+        "update_frequency": "Nightly during canvass; certification per statutory calendar.",
+        "feasibility": "High",
+        "feasibility_notes": "Authoritative counts with predictable publication cadence; may require PDF/CSV parsing."
+      },
+      {
+        "name": "Ballotpedia \u2013 Massachusetts elections portal",
+        "url": "https://ballotpedia.org/Massachusetts",
+        "description": "Aggregated election calendars, candidate rosters, and unofficial vote tallies.",
+        "access": "Open web (CC BY-SA)",
+        "update_frequency": "Daily during election periods; slower off-cycle.",
+        "feasibility": "Medium",
+        "feasibility_notes": "Rich historical context; manual scraping necessary for automated ingestion."
+      },
+      {
+        "name": "Decision Desk HQ Results Feed",
+        "url": "https://results.decisiondeskhq.com/",
+        "description": "Paid API for precinct and county level tallies across US states.",
+        "access": "Commercial API",
+        "update_frequency": "Minutes on election night; hourly thereafter.",
+        "feasibility": "High",
+        "feasibility_notes": "Fast and structured but gated behind subscription and integration work."
+      }
+    ]
+  },
+  "Vermont": {
+    "level": "state",
+    "sources": [
+      {
+        "name": "Vermont election office",
+        "url": "https://sos.vermont.gov/elections/",
+        "description": "Certified statewide and county results plus candidate filings.",
+        "access": "Official (open web)",
+        "update_frequency": "Nightly during canvass; certification per statutory calendar.",
+        "feasibility": "High",
+        "feasibility_notes": "Authoritative counts with predictable publication cadence; may require PDF/CSV parsing."
+      },
+      {
+        "name": "Ballotpedia \u2013 Vermont elections portal",
+        "url": "https://ballotpedia.org/Vermont",
+        "description": "Aggregated election calendars, candidate rosters, and unofficial vote tallies.",
+        "access": "Open web (CC BY-SA)",
+        "update_frequency": "Daily during election periods; slower off-cycle.",
+        "feasibility": "Medium",
+        "feasibility_notes": "Rich historical context; manual scraping necessary for automated ingestion."
+      },
+      {
+        "name": "Decision Desk HQ Results Feed",
+        "url": "https://results.decisiondeskhq.com/",
+        "description": "Paid API for precinct and county level tallies across US states.",
+        "access": "Commercial API",
+        "update_frequency": "Minutes on election night; hourly thereafter.",
+        "feasibility": "High",
+        "feasibility_notes": "Fast and structured but gated behind subscription and integration work."
+      }
+    ]
+  },
+  "Maine": {
+    "level": "state",
+    "sources": [
+      {
+        "name": "Maine election office",
+        "url": "https://www.maine.gov/sos/cec/elec/index.html",
+        "description": "Certified statewide and county results plus candidate filings.",
+        "access": "Official (open web)",
+        "update_frequency": "Nightly during canvass; certification per statutory calendar.",
+        "feasibility": "High",
+        "feasibility_notes": "Authoritative counts with predictable publication cadence; may require PDF/CSV parsing."
+      },
+      {
+        "name": "Ballotpedia \u2013 Maine elections portal",
+        "url": "https://ballotpedia.org/Maine",
+        "description": "Aggregated election calendars, candidate rosters, and unofficial vote tallies.",
+        "access": "Open web (CC BY-SA)",
+        "update_frequency": "Daily during election periods; slower off-cycle.",
+        "feasibility": "Medium",
+        "feasibility_notes": "Rich historical context; manual scraping necessary for automated ingestion."
+      },
+      {
+        "name": "Decision Desk HQ Results Feed",
+        "url": "https://results.decisiondeskhq.com/",
+        "description": "Paid API for precinct and county level tallies across US states.",
+        "access": "Commercial API",
+        "update_frequency": "Minutes on election night; hourly thereafter.",
+        "feasibility": "High",
+        "feasibility_notes": "Fast and structured but gated behind subscription and integration work."
+      }
+    ]
+  },
+  "Hawaii": {
+    "level": "state",
+    "sources": [
+      {
+        "name": "Hawaii election office",
+        "url": "https://elections.hawaii.gov/",
+        "description": "Certified statewide and county results plus candidate filings.",
+        "access": "Official (open web)",
+        "update_frequency": "Nightly during canvass; certification per statutory calendar.",
+        "feasibility": "High",
+        "feasibility_notes": "Authoritative counts with predictable publication cadence; may require PDF/CSV parsing."
+      },
+      {
+        "name": "Ballotpedia \u2013 Hawaii elections portal",
+        "url": "https://ballotpedia.org/Hawaii",
+        "description": "Aggregated election calendars, candidate rosters, and unofficial vote tallies.",
+        "access": "Open web (CC BY-SA)",
+        "update_frequency": "Daily during election periods; slower off-cycle.",
+        "feasibility": "Medium",
+        "feasibility_notes": "Rich historical context; manual scraping necessary for automated ingestion."
+      },
+      {
+        "name": "Decision Desk HQ Results Feed",
+        "url": "https://results.decisiondeskhq.com/",
+        "description": "Paid API for precinct and county level tallies across US states.",
+        "access": "Commercial API",
+        "update_frequency": "Minutes on election night; hourly thereafter.",
+        "feasibility": "High",
+        "feasibility_notes": "Fast and structured but gated behind subscription and integration work."
+      }
+    ]
+  },
+  "Panama": {
+    "level": "national",
+    "sources": [
+      {
+        "name": "Reuters Elections Coverage \u2013 Panama",
+        "url": "https://www.reuters.com/world/",
+        "description": "Global wire-service election reporting with near-real-time updates.",
+        "access": "Open web",
+        "update_frequency": "Minutes during major elections.",
+        "feasibility": "Medium",
+        "feasibility_notes": "Reliable narrative coverage; data extraction requires scraping and manual QA."
+      },
+      {
+        "name": "Local election commission (Panama)",
+        "url": "",
+        "description": "Official jurisdiction election authority (URL to be verified per contest).",
+        "access": "Varies",
+        "update_frequency": "Certification timeline defined by statute.",
+        "feasibility": "Low",
+        "feasibility_notes": "Research required to identify authoritative feed; placeholder for analyst follow-up."
+      }
+    ]
+  },
+  "South Africa": {
+    "level": "national",
+    "sources": [
+      {
+        "name": "Reuters Elections Coverage \u2013 South Africa",
+        "url": "https://www.reuters.com/world/",
+        "description": "Global wire-service election reporting with near-real-time updates.",
+        "access": "Open web",
+        "update_frequency": "Minutes during major elections.",
+        "feasibility": "Medium",
+        "feasibility_notes": "Reliable narrative coverage; data extraction requires scraping and manual QA."
+      },
+      {
+        "name": "Local election commission (South Africa)",
+        "url": "",
+        "description": "Official jurisdiction election authority (URL to be verified per contest).",
+        "access": "Varies",
+        "update_frequency": "Certification timeline defined by statute.",
+        "feasibility": "Low",
+        "feasibility_notes": "Research required to identify authoritative feed; placeholder for analyst follow-up."
+      }
+    ]
+  },
+  "Israel": {
+    "level": "national",
+    "sources": [
+      {
+        "name": "Reuters Elections Coverage \u2013 Israel",
+        "url": "https://www.reuters.com/world/",
+        "description": "Global wire-service election reporting with near-real-time updates.",
+        "access": "Open web",
+        "update_frequency": "Minutes during major elections.",
+        "feasibility": "Medium",
+        "feasibility_notes": "Reliable narrative coverage; data extraction requires scraping and manual QA."
+      },
+      {
+        "name": "Local election commission (Israel)",
+        "url": "",
+        "description": "Official jurisdiction election authority (URL to be verified per contest).",
+        "access": "Varies",
+        "update_frequency": "Certification timeline defined by statute.",
+        "feasibility": "Low",
+        "feasibility_notes": "Research required to identify authoritative feed; placeholder for analyst follow-up."
+      }
+    ]
+  },
+  "India": {
+    "level": "national",
+    "sources": [
+      {
+        "name": "Election Commission of India \u2013 Election Results",
+        "url": "https://results.eci.gov.in/",
+        "description": "Official results portal for Lok Sabha and Assembly elections.",
+        "access": "Open government data",
+        "update_frequency": "Minutes during counting days; final certification after canvass.",
+        "feasibility": "High",
+        "feasibility_notes": "Structured data with JSON endpoints; uptime maintained during counting."
+      },
+      {
+        "name": "PRS Legislative Research Election Atlas",
+        "url": "https://prsindia.org/elections",
+        "description": "Aggregated results with historical comparisons.",
+        "access": "Open research use",
+        "update_frequency": "Days after results",
+        "feasibility": "Medium",
+        "feasibility_notes": "Excellent for retrospective analysis; not real-time."
+      }
+    ]
+  },
+  "Unclassified": {
+    "level": "unknown",
+    "sources": [
+      {
+        "name": "Reuters Elections Coverage \u2013 Unclassified",
+        "url": "https://www.reuters.com/world/",
+        "description": "Global wire-service election reporting with near-real-time updates.",
+        "access": "Open web",
+        "update_frequency": "Minutes during major elections.",
+        "feasibility": "Medium",
+        "feasibility_notes": "Reliable narrative coverage; data extraction requires scraping and manual QA."
+      },
+      {
+        "name": "Local election commission (Unclassified)",
+        "url": "",
+        "description": "Official jurisdiction election authority (URL to be verified per contest).",
+        "access": "Varies",
+        "update_frequency": "Certification timeline defined by statute.",
+        "feasibility": "Low",
+        "feasibility_notes": "Research required to identify authoritative feed; placeholder for analyst follow-up."
+      }
+    ]
+  },
+  "United Kingdom": {
+    "level": "national",
+    "sources": [
+      {
+        "name": "UK Electoral Commission \u2013 Results and Turnout",
+        "url": "https://www.electoralcommission.org.uk/research-voting-and-elections",
+        "description": "Official UK parliamentary and local election results with downloadable datasets.",
+        "access": "Open government data",
+        "update_frequency": "Certified results published within days of counts.",
+        "feasibility": "High",
+        "feasibility_notes": "Primary authority for certified vote totals; limited to official counts (no projections)."
+      },
+      {
+        "name": "BBC Elections Live Results",
+        "url": "https://www.bbc.com/news/election",
+        "description": "Live constituency-level reporting with history and contextual analysis.",
+        "access": "Open web (API unofficial)",
+        "update_frequency": "Minutes on election night; archived pages post-event.",
+        "feasibility": "Medium",
+        "feasibility_notes": "Timely updates; scraping required for automation and subject to layout drift."
+      },
+      {
+        "name": "Press Association Elections Database",
+        "url": "https://www.pressassociation.com/solutions/elections/",
+        "description": "Syndicated constituency results feed consumed by major newsrooms.",
+        "access": "Commercial license",
+        "update_frequency": "Real-time on election night.",
+        "feasibility": "High",
+        "feasibility_notes": "Robust infrastructure with SLA-backed updates; procurement and per-seat pricing required."
+      }
+    ]
+  },
+  "European Union": {
+    "level": "supra-national",
+    "sources": [
+      {
+        "name": "Reuters Elections Coverage \u2013 European Union",
+        "url": "https://www.reuters.com/world/",
+        "description": "Global wire-service election reporting with near-real-time updates.",
+        "access": "Open web",
+        "update_frequency": "Minutes during major elections.",
+        "feasibility": "Medium",
+        "feasibility_notes": "Reliable narrative coverage; data extraction requires scraping and manual QA."
+      },
+      {
+        "name": "Local election commission (European Union)",
+        "url": "",
+        "description": "Official jurisdiction election authority (URL to be verified per contest).",
+        "access": "Varies",
+        "update_frequency": "Certification timeline defined by statute.",
+        "feasibility": "Low",
+        "feasibility_notes": "Research required to identify authoritative feed; placeholder for analyst follow-up."
+      }
+    ]
+  },
+  "Germany": {
+    "level": "national",
+    "sources": [
+      {
+        "name": "Reuters Elections Coverage \u2013 Germany",
+        "url": "https://www.reuters.com/world/",
+        "description": "Global wire-service election reporting with near-real-time updates.",
+        "access": "Open web",
+        "update_frequency": "Minutes during major elections.",
+        "feasibility": "Medium",
+        "feasibility_notes": "Reliable narrative coverage; data extraction requires scraping and manual QA."
+      },
+      {
+        "name": "Local election commission (Germany)",
+        "url": "",
+        "description": "Official jurisdiction election authority (URL to be verified per contest).",
+        "access": "Varies",
+        "update_frequency": "Certification timeline defined by statute.",
+        "feasibility": "Low",
+        "feasibility_notes": "Research required to identify authoritative feed; placeholder for analyst follow-up."
+      }
+    ]
+  },
+  "Venezuela": {
+    "level": "national",
+    "sources": [
+      {
+        "name": "Reuters Elections Coverage \u2013 Venezuela",
+        "url": "https://www.reuters.com/world/",
+        "description": "Global wire-service election reporting with near-real-time updates.",
+        "access": "Open web",
+        "update_frequency": "Minutes during major elections.",
+        "feasibility": "Medium",
+        "feasibility_notes": "Reliable narrative coverage; data extraction requires scraping and manual QA."
+      },
+      {
+        "name": "Local election commission (Venezuela)",
+        "url": "",
+        "description": "Official jurisdiction election authority (URL to be verified per contest).",
+        "access": "Varies",
+        "update_frequency": "Certification timeline defined by statute.",
+        "feasibility": "Low",
+        "feasibility_notes": "Research required to identify authoritative feed; placeholder for analyst follow-up."
+      }
+    ]
+  },
+  "Colorado": {
+    "level": "state",
+    "sources": [
+      {
+        "name": "Colorado election office",
+        "url": "https://www.sos.state.co.us/pubs/elections/main.html",
+        "description": "Certified statewide and county results plus candidate filings.",
+        "access": "Official (open web)",
+        "update_frequency": "Nightly during canvass; certification per statutory calendar.",
+        "feasibility": "High",
+        "feasibility_notes": "Authoritative counts with predictable publication cadence; may require PDF/CSV parsing."
+      },
+      {
+        "name": "Ballotpedia \u2013 Colorado elections portal",
+        "url": "https://ballotpedia.org/Colorado",
+        "description": "Aggregated election calendars, candidate rosters, and unofficial vote tallies.",
+        "access": "Open web (CC BY-SA)",
+        "update_frequency": "Daily during election periods; slower off-cycle.",
+        "feasibility": "Medium",
+        "feasibility_notes": "Rich historical context; manual scraping necessary for automated ingestion."
+      },
+      {
+        "name": "Decision Desk HQ Results Feed",
+        "url": "https://results.decisiondeskhq.com/",
+        "description": "Paid API for precinct and county level tallies across US states.",
+        "access": "Commercial API",
+        "update_frequency": "Minutes on election night; hourly thereafter.",
+        "feasibility": "High",
+        "feasibility_notes": "Fast and structured but gated behind subscription and integration work."
+      }
+    ]
+  },
+  "United Kingdom - London": {
+    "level": "city",
+    "sources": [
+      {
+        "name": "Reuters Elections Coverage \u2013 United Kingdom - London",
+        "url": "https://www.reuters.com/world/",
+        "description": "Global wire-service election reporting with near-real-time updates.",
+        "access": "Open web",
+        "update_frequency": "Minutes during major elections.",
+        "feasibility": "Medium",
+        "feasibility_notes": "Reliable narrative coverage; data extraction requires scraping and manual QA."
+      },
+      {
+        "name": "Local election commission (United Kingdom - London)",
+        "url": "",
+        "description": "Official jurisdiction election authority (URL to be verified per contest).",
+        "access": "Varies",
+        "update_frequency": "Certification timeline defined by statute.",
+        "feasibility": "Low",
+        "feasibility_notes": "Research required to identify authoritative feed; placeholder for analyst follow-up."
+      }
+    ]
+  },
+  "North Carolina": {
+    "level": "state",
+    "sources": [
+      {
+        "name": "North Carolina election office",
+        "url": "https://www.ncsbe.gov/",
+        "description": "Certified statewide and county results plus candidate filings.",
+        "access": "Official (open web)",
+        "update_frequency": "Nightly during canvass; certification per statutory calendar.",
+        "feasibility": "High",
+        "feasibility_notes": "Authoritative counts with predictable publication cadence; may require PDF/CSV parsing."
+      },
+      {
+        "name": "Ballotpedia \u2013 North Carolina elections portal",
+        "url": "https://ballotpedia.org/North_Carolina",
+        "description": "Aggregated election calendars, candidate rosters, and unofficial vote tallies.",
+        "access": "Open web (CC BY-SA)",
+        "update_frequency": "Daily during election periods; slower off-cycle.",
+        "feasibility": "Medium",
+        "feasibility_notes": "Rich historical context; manual scraping necessary for automated ingestion."
+      },
+      {
+        "name": "Decision Desk HQ Results Feed",
+        "url": "https://results.decisiondeskhq.com/",
+        "description": "Paid API for precinct and county level tallies across US states.",
+        "access": "Commercial API",
+        "update_frequency": "Minutes on election night; hourly thereafter.",
+        "feasibility": "High",
+        "feasibility_notes": "Fast and structured but gated behind subscription and integration work."
+      }
+    ]
+  },
+  "South Carolina": {
+    "level": "state",
+    "sources": [
+      {
+        "name": "South Carolina election office",
+        "url": "https://www.scvotes.org/",
+        "description": "Certified statewide and county results plus candidate filings.",
+        "access": "Official (open web)",
+        "update_frequency": "Nightly during canvass; certification per statutory calendar.",
+        "feasibility": "High",
+        "feasibility_notes": "Authoritative counts with predictable publication cadence; may require PDF/CSV parsing."
+      },
+      {
+        "name": "Ballotpedia \u2013 South Carolina elections portal",
+        "url": "https://ballotpedia.org/South_Carolina",
+        "description": "Aggregated election calendars, candidate rosters, and unofficial vote tallies.",
+        "access": "Open web (CC BY-SA)",
+        "update_frequency": "Daily during election periods; slower off-cycle.",
+        "feasibility": "Medium",
+        "feasibility_notes": "Rich historical context; manual scraping necessary for automated ingestion."
+      },
+      {
+        "name": "Decision Desk HQ Results Feed",
+        "url": "https://results.decisiondeskhq.com/",
+        "description": "Paid API for precinct and county level tallies across US states.",
+        "access": "Commercial API",
+        "update_frequency": "Minutes on election night; hourly thereafter.",
+        "feasibility": "High",
+        "feasibility_notes": "Fast and structured but gated behind subscription and integration work."
+      }
+    ]
+  },
+  "Kentucky": {
+    "level": "state",
+    "sources": [
+      {
+        "name": "Kentucky election office",
+        "url": "https://elect.ky.gov/Pages/default.aspx",
+        "description": "Certified statewide and county results plus candidate filings.",
+        "access": "Official (open web)",
+        "update_frequency": "Nightly during canvass; certification per statutory calendar.",
+        "feasibility": "High",
+        "feasibility_notes": "Authoritative counts with predictable publication cadence; may require PDF/CSV parsing."
+      },
+      {
+        "name": "Ballotpedia \u2013 Kentucky elections portal",
+        "url": "https://ballotpedia.org/Kentucky",
+        "description": "Aggregated election calendars, candidate rosters, and unofficial vote tallies.",
+        "access": "Open web (CC BY-SA)",
+        "update_frequency": "Daily during election periods; slower off-cycle.",
+        "feasibility": "Medium",
+        "feasibility_notes": "Rich historical context; manual scraping necessary for automated ingestion."
+      },
+      {
+        "name": "Decision Desk HQ Results Feed",
+        "url": "https://results.decisiondeskhq.com/",
+        "description": "Paid API for precinct and county level tallies across US states.",
+        "access": "Commercial API",
+        "update_frequency": "Minutes on election night; hourly thereafter.",
+        "feasibility": "High",
+        "feasibility_notes": "Fast and structured but gated behind subscription and integration work."
+      }
+    ]
+  },
+  "Canada": {
+    "level": "national",
+    "sources": [
+      {
+        "name": "Elections Canada \u2013 Official Voting Results",
+        "url": "https://www.elections.ca/content.aspx?section=res&dir=rep/oth/ovr&document=index&lang=e",
+        "description": "Certified federal election results down to riding level.",
+        "access": "Open government data",
+        "update_frequency": "Released after official tabulation (days to weeks).",
+        "feasibility": "High",
+        "feasibility_notes": "Authoritative with CSV and machine-readable formats; slower than media projections."
+      },
+      {
+        "name": "CBC News Elections Dashboard",
+        "url": "https://newsinteractives.cbc.ca/elections/",
+        "description": "Live results and historical context for federal and provincial races.",
+        "access": "Open web",
+        "update_frequency": "Minutes during election night; archived thereafter.",
+        "feasibility": "Medium",
+        "feasibility_notes": "Timely but requires scraping or manual download; APIs not public."
+      }
+    ]
+  },
+  "Ecuador": {
+    "level": "national",
+    "sources": [
+      {
+        "name": "Reuters Elections Coverage \u2013 Ecuador",
+        "url": "https://www.reuters.com/world/",
+        "description": "Global wire-service election reporting with near-real-time updates.",
+        "access": "Open web",
+        "update_frequency": "Minutes during major elections.",
+        "feasibility": "Medium",
+        "feasibility_notes": "Reliable narrative coverage; data extraction requires scraping and manual QA."
+      },
+      {
+        "name": "Local election commission (Ecuador)",
+        "url": "",
+        "description": "Official jurisdiction election authority (URL to be verified per contest).",
+        "access": "Varies",
+        "update_frequency": "Certification timeline defined by statute.",
+        "feasibility": "Low",
+        "feasibility_notes": "Research required to identify authoritative feed; placeholder for analyst follow-up."
+      }
+    ]
+  },
+  "Australia": {
+    "level": "national",
+    "sources": [
+      {
+        "name": "Australian Electoral Commission Tally Room",
+        "url": "https://tallyroom.aec.gov.au/",
+        "description": "Official results for federal elections and referendums.",
+        "access": "Open government data",
+        "update_frequency": "Minutes during counts; certification after preference distribution.",
+        "feasibility": "High",
+        "feasibility_notes": "Reliable JSON endpoints; timezone considerations for automation."
+      },
+      {
+        "name": "ABC News Elections Coverage",
+        "url": "https://www.abc.net.au/news/elections/",
+        "description": "Live race calls and swing analysis.",
+        "access": "Open web",
+        "update_frequency": "Minutes during election night.",
+        "feasibility": "Medium",
+        "feasibility_notes": "Good context and alternative feed; scraping or manual export required."
+      }
+    ]
+  },
+  "South Korea": {
+    "level": "national",
+    "sources": [
+      {
+        "name": "Reuters Elections Coverage \u2013 South Korea",
+        "url": "https://www.reuters.com/world/",
+        "description": "Global wire-service election reporting with near-real-time updates.",
+        "access": "Open web",
+        "update_frequency": "Minutes during major elections.",
+        "feasibility": "Medium",
+        "feasibility_notes": "Reliable narrative coverage; data extraction requires scraping and manual QA."
+      },
+      {
+        "name": "Local election commission (South Korea)",
+        "url": "",
+        "description": "Official jurisdiction election authority (URL to be verified per contest).",
+        "access": "Varies",
+        "update_frequency": "Certification timeline defined by statute.",
+        "feasibility": "Low",
+        "feasibility_notes": "Research required to identify authoritative feed; placeholder for analyst follow-up."
+      }
+    ]
+  },
+  "American Samoa": {
+    "level": "state",
+    "sources": [
+      {
+        "name": "American Samoa election office",
+        "url": "https://aselectionoffice.gov/",
+        "description": "Certified statewide and county results plus candidate filings.",
+        "access": "Official (open web)",
+        "update_frequency": "Nightly during canvass; certification per statutory calendar.",
+        "feasibility": "High",
+        "feasibility_notes": "Authoritative counts with predictable publication cadence; may require PDF/CSV parsing."
+      },
+      {
+        "name": "Ballotpedia \u2013 American Samoa elections portal",
+        "url": "https://ballotpedia.org/American_Samoa",
+        "description": "Aggregated election calendars, candidate rosters, and unofficial vote tallies.",
+        "access": "Open web (CC BY-SA)",
+        "update_frequency": "Daily during election periods; slower off-cycle.",
+        "feasibility": "Medium",
+        "feasibility_notes": "Rich historical context; manual scraping necessary for automated ingestion."
+      },
+      {
+        "name": "Decision Desk HQ Results Feed",
+        "url": "https://results.decisiondeskhq.com/",
+        "description": "Paid API for precinct and county level tallies across US states.",
+        "access": "Commercial API",
+        "update_frequency": "Minutes on election night; hourly thereafter.",
+        "feasibility": "High",
+        "feasibility_notes": "Fast and structured but gated behind subscription and integration work."
+      }
+    ]
+  }
+}
