@@ -91,6 +91,24 @@ QUESTION_PATTERNS = [
     re.compile(r"\brunoff\b", re.IGNORECASE),
 ]
 
+# Election office inference keywords (ordered by priority).
+OFFICE_PATTERNS: List[Tuple[str, Tuple[str, ...]]] = [
+    ("President", (r"\bpresident\b", r"\bwhite house\b", r"\bpotus\b", r"\boval office\b")),
+    ("Vice President", (r"\bvice president\b", r"\bvice-presidential\b", r"\bvp\b")),
+    ("Prime Minister", (r"\bprime minister\b", r"\bpm election\b")),
+    ("Senate", (r"\bsenate\b", r"\bsenator\b", r"\bupper house\b")),
+    ("House", (r"\bhouse of representatives\b", r"\bus house\b", r"\bcongress\b", r"\bcongressional\b", r"\brepresentative\b")),
+    ("Governor", (r"\bgovernor\b", r"\bgubernatorial\b", r"\bgovernorship\b")),
+    ("Lieutenant Governor", (r"\blieutenant governor\b", r"\blt\.? governor\b")),
+    ("Attorney General", (r"\battorney general\b",)),
+    ("Secretary of State", (r"\bsecretary of state\b",)),
+    ("State Legislature", (r"\bstate legislature\b", r"\bstate senate\b", r"\bstate house\b", r"\bstate assembly\b", r"\blegislative assembly\b")),
+    ("Mayor", (r"\bmayor\b", r"\bmayoral\b")),
+    ("City Council", (r"\bcity council\b", r"\bcouncilmember\b", r"\bcouncil seat\b")),
+    ("Parliament", (r"\bparliament\b", r"\bmember of parliament\b", r"\bmp election\b")),
+    ("European Parliament", (r"\beuropean parliament\b",)),
+]
+
 # Offset/limit settings recommended by the Polymarket API docs.
 PAGE_LIMIT = 500
 MAX_OFFSET = 20000  # Safety stop to avoid hammering the API.
@@ -506,6 +524,7 @@ class MarketRecord:
     analytics_source: Optional[str] = None
     analytics_event_tags: List[str] = field(default_factory=list)
     candidate_names: List[str] = field(default_factory=list)
+    office: Optional[str] = None
 
     def to_row(self) -> Dict[str, object]:
         """Convert the dataclass to a flat dict suitable for CSV/JSON export."""
@@ -546,7 +565,30 @@ class MarketRecord:
             "analytics_source": self.analytics_source,
             "analytics_event_tags": self.analytics_event_tags,
             "candidate_names": self.candidate_names,
+            "office": self.office,
         }
+
+
+def infer_office_for_record(record: MarketRecord) -> Optional[str]:
+    """Infer the electoral office targeted by the market."""
+    parts = [
+        record.event_title or "",
+        record.market_question or "",
+        record.category or "",
+        record.resolution_notes or "",
+        " ".join(record.analytics_event_tags or []),
+    ]
+    text = " ".join(part for part in parts if part).lower()
+    if not text:
+        return None
+    for office, patterns in OFFICE_PATTERNS:
+        for pattern in patterns:
+            if re.search(pattern, text):
+                # Avoid misclassifying "White House" as House contests.
+                if office == "House" and "white house" in text:
+                    continue
+                return office
+    return None
 
 
 NAME_TOKEN_PATTERN = re.compile(r"[A-Za-z][A-Za-z'.-]*")
@@ -993,6 +1035,7 @@ def load_closed_election_markets(
                     resolution_notes=market.get("description") or event.get("description"),
                     clob_token_ids=clob_token_ids,
                 )
+                record.office = infer_office_for_record(record)
                 records.append(record)
 
         offset += PAGE_LIMIT
@@ -1056,6 +1099,7 @@ def enrich_with_analytics(
             candidate_inputs.append(record.resolution_notes)
 
         record.candidate_names = extract_candidate_names(candidate_inputs)
+        record.office = infer_office_for_record(record)
 
 
 def match_us_state(text: str) -> Optional[Tuple[str, str]]:
